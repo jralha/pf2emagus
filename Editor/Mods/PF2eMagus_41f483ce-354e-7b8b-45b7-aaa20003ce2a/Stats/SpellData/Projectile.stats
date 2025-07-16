@@ -101,8 +101,8 @@
         <field name="AlternativeCastTextEvents" type="StringTableFieldDefinition" value="CastOffhand" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;KiPoint:1" />
-        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="73afb4e5-8cfe-4479-95cf-16889597fee3,,;7e67bfd0-2fc2-4d10-bed5-cfda9e660de5,,;eb054308-7fce-4b85-bf4c-7a0031fda7ac,,;0b0dc35b-4953-45c0-a9eb-8d3fef5e798a,,;6ec808e1-e128-44ef-9361-a713bf86de8f,,;b2e9c771-3497-444c-b360-23b4441985a1,,;f920a0a6-f257-4ce4-8d17-2dcaa7bb7bbb,,;,,;,," />
-        <field name="DualWieldingSpellAnimation" type="CastAnimationsTableFieldDefinition" value="73afb4e5-8cfe-4479-95cf-16889597fee3,,;7e67bfd0-2fc2-4d10-bed5-cfda9e660de5,,;eb054308-7fce-4b85-bf4c-7a0031fda7ac,,:4a789a60-04b8-4a26-b476-65cf26ca558b,,;a11b8bcb-ba24-417a-aa86-4e4379c41ee2,,;6ec808e1-e128-44ef-9361-a713bf86de8f,,;b2e9c771-3497-444c-b360-23b4441985a1,,;f920a0a6-f257-4ce4-8d17-2dcaa7bb7bbb,,;,,;,," />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="a0be34b6-48c6-4ff7-a57a-b2e9fccbdda0,,;ceace50f-ceef-4cdd-9995-b18aed12acd5,,;71cc648d-73f2-4db8-ae9f-76e649c7613f,,;7765e1e7-f20a-4323-af19-ad3752626797,,;a097bbc5-568d-4c01-a84d-56960e2f6545,,;,,;f920a0a6-f257-4ce4-8d17-2dcaa7bb7bbb,,;,,;,," />
+        <field name="DualWieldingSpellAnimation" type="CastAnimationsTableFieldDefinition" value="73afb4e5-8cfe-4479-95cf-16889597fee3,,;45bcbbd4-f9ca-4b19-88c2-822c5e2b0d8b,,;466e7470-712f-4a67-8ef1-5908a20b0449,,;c1713221-163b-4bae-95de-e6681d665c76,,;6ec808e1-e128-44ef-9361-a713bf86de8f,,;,,;f920a0a6-f257-4ce4-8d17-2dcaa7bb7bbb,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
         <field name="WeaponType" type="EnumerationListTableFieldDefinition" value="Ammunition" enumeration_type_name="WeaponFlags" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;IsDefaultWeaponAction;IgnorePreviouslyPickedEntities;HasVerbalComponent;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
@@ -110,7 +110,7 @@
         <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="CanUseWeaponActions();" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="f93fdc8c-d5cf-42d6-a88d-de41c644e5f5" />
-        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="732c29ee-1083-44b1-8974-4e8973a1b51c" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="bf5fa9ef-7d14-4061-b393-10852789ff1b" />
         <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellSoundMagnitude" version="1" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Ranged" enumeration_type_name="SpellSheathing" version="1" />
         <field name="Level" type="IntegerTableFieldDefinition" value="1" />

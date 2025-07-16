@@ -18,6 +18,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsWeaponAttack() or IsUnarmedAttack()):DamageBonus(2,Force);" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+        <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" value="fe416267-36f0-4346-90fc-4aeb7f25ec07" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -31,6 +32,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsWeaponAttack() and IsMeleeAttack())(:DamageBonus(2,Force);IF(IsWeaponAttack() and IsMeleeAttack() and OffGuard() and not (HasShieldEquipped() or WieldingWeapon('Twohanded', true, true)):DamageBonus(3,Force);ActionResource(Movement, 1.5, 0);" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+        <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" value="b40466dd-a62d-455b-b4ba-dd0d86e61cd4" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -44,6 +46,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsWeaponAttack() and IsMeleeAttack())(:DamageBonus(2,Force);TemporaryHP((LevelMapValue(CharacterLevel))*2);" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+        <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" value="978ef74e-3f22-4719-a113-fa48ebe1444a" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -57,6 +60,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_RaiseSymbol);IF(IsWeaponAttack() and IsMeleeAttack())(:DamageBonus(2,Force);" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+        <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" value="ff4d9497-023c-434a-bd14-82fc367e991c" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -219,7 +223,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbb6eeca9ge288g1191gfbd9g7ef24e943701" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0e23fc1cg1760g4a42g52e8g5784c753285c" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_FlameBlade" />
-        <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" value="d97491dc-10fe-4d5f-b88e-0d5ebb0a3731" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="StatusSheathing" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -230,7 +234,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h23e6151fg077fg05f0gc0cag477d69bf807a" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h84529a0agf6afgde4dgf099g7ca9ec51131f" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_LightningArrow" />
-        <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" value="51dfc319-759d-481a-b496-95b4ea15b30f" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Ranged" enumeration_type_name="StatusSheathing" version="1" />
       </fields>
     </stat_object>
   </stat_objects>

@@ -24,7 +24,6 @@
         <field name="Conditions" type="StringTableFieldDefinition" value="IsSpell() and (HasStringInSpellRoll('Attack') or (HasStringInSpellRoll('Check') and HasSpellFlag(SpellFlags.Attack));" />
         <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,Spellstriking,100,-1);" />
         <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(Spellstriking)" />
-        <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" value="d97491dc-10fe-4d5f-b88e-0d5ebb0a3731" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -38,7 +37,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_LightningArrow" />
         <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,RangedSpellstriking,100,-1);" />
         <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(RangedSpellstriking)" />
-        <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" value="51dfc319-759d-481a-b496-95b4ea15b30f" />
+        <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" value="1be5aa5a-e221-4f0e-a1bf-be25f5d23224" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -83,6 +82,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_BelmsBonusAttack" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_ArcaneCascadeLS);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc5cd1fa2g2898gb541gc6b0gf4ab57ffeded" version="1" />
+        <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" value="8047cf29-2c79-4f12-a4bf-d965a023be63" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -94,6 +94,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_BelmsBonusAttack" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_ArcaneCascadeII);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6397e118gcab9ga0aegd1b3g3c4f214f1473" version="1" />
+        <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" value="721dfac3-92d4-41f5-b773-b7072a86232f" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -105,6 +106,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Action_BelmsBonusAttack" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_ArcaneCascadeST);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h77294a83g2b48gf05ag170fg86f13de6d923" version="1" />
+        <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" value="ff4d9497-023c-434a-bd14-82fc367e991c" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
