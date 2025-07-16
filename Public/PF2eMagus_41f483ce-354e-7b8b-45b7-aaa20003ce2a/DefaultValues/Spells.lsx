@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="200"/>
+    <region id="DefaultValues">
+        <node id="root">
+            <children>
+                <node id="DefaultValue">
+                    <attribute id="Add" type="LSString" value="Projectile_ElectricArc;Projectile_FireBolt;Target_MageHand;Projectile_RayOfFrost;Shout_Shield_Cantrip;Target_MysticArmor_Base;Zone_BurningHands;Target_Grease;Target_Sleep;Projectile_MagicMissile"/>
+                    <attribute id="Level" type="int32" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="c7efa52d-d54d-4132-ad4a-44f15fcddb22"/>
+                    <attribute id="UUID" type="guid" value="4d02bfc1-75e6-42eb-acd9-126e65f43862"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

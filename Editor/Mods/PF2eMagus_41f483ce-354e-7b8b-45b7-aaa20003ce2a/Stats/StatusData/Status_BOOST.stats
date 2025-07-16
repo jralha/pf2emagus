@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="e2a8d59b-0e34-4a7c-bf5f-db7a2bb34cde">
+  <stat_objects>
+    <stat_object color="#FF8A2BE2" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d4ee6268-d105-43d9-b703-775764b39404" />
+        <field name="Name" type="NameTableFieldDefinition" value="Magus_Status" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cc2a0e6c-8e92-493e-82e3-f6653310911b" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARCANE_CASCADE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5b13e251gab2bg972ag9bd2g7f3200c06822" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7f5119b5gc15eg3bf0gb5aagd4f74e88f560" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_ShadowBlade" />
+        <field name="StackId" type="StringTableFieldDefinition" value="STANCE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsWeaponAttack() or IsUnarmedAttack()):DamageBonus(2,Force);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5d584ace-ce3e-46f7-97f9-879490f221ac" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARCANE_CASCADE_LS" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h378f79afg86f9g8df9gb362g462322502ca7" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7d9937d7g8250g2295gbd34g2a579b9a3674" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_ShadowBlade" />
+        <field name="StackId" type="StringTableFieldDefinition" value="STANCE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsWeaponAttack() and IsMeleeAttack())(:DamageBonus(2,Force);IF(IsWeaponAttack() and IsMeleeAttack() and OffGuard() and not (HasShieldEquipped() or WieldingWeapon('Twohanded', true, true)):DamageBonus(3,Force);ActionResource(Movement, 1.5, 0);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c7242078-b647-4ba3-a88c-b8e144a05f7e" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARCANE_CASCADE_II" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc9cb251fg9ce0gd49dg3b67ged70535d5191" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdd6ebd85g537egc3a4g9349g7f87f8d576e4" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_ShadowBlade" />
+        <field name="StackId" type="StringTableFieldDefinition" value="STANCE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsWeaponAttack() and IsMeleeAttack())(:DamageBonus(2,Force);TemporaryHP((LevelMapValue(CharacterLevel))*2);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="15b19a3f-7a97-4ac1-a4e6-dfefc5e23999" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARCANE_CASCADE_ST" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="had13c93fg03fcgaf08g83dag6a14b05ad459" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha6bebf50g7cc1g4b7fg2a80g974ddea28372" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_ShadowBlade" />
+        <field name="StackId" type="StringTableFieldDefinition" value="STANCE" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_RaiseSymbol);IF(IsWeaponAttack() and IsMeleeAttack())(:DamageBonus(2,Force);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="515095f0-93be-4077-9808-6e4c612630e0" />
+        <field name="Name" type="NameTableFieldDefinition" value="Spellstrike_Discharged" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfb7cc774gaf55ga10cg7facg65a3054ba7ab" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h53ad0b3cg3b34g79b6gc9d9gca1b25dad7d8" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BoomingBlade" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4c5d24e2-1e8d-4a0b-a508-cca9a96f7e29" />
+        <field name="Name" type="NameTableFieldDefinition" value="Spellstrike_Crit" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9dde7888g8212g761fgf165gff4ad8ea8276" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdaaff4cbge01ag682dg4c7bg91fe591d1537" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BoomingBlade" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Spellstrike_Crit);CriticalHit(AttackRoll,Success,Always);RollBonus(MeleeSpellAttack,10);RollBonus(RangedSpellAttack, 10);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded;OnSpellCast;OnAttack;OnMove" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6ea8c1f7-39f1-4f26-9eab-009ecd0995b5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Spellstrike_Hit" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3f0d16c9g1d14g47aeg1cefgf4cd5b2ff5b4" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he63c1544g4700g7c77gd225ga55e7e8d40e5" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BoomingBlade" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Spellstrike_Hit);CriticalHit(AttackRoll,Success,Never);RollBonus(MeleeSpellAttack,10);RollBonus(RangedSpellAttack, 10);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded;OnSpellCast;OnAttack;OnMove" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c4064016-3e18-4fd1-a38c-51e17322b386" />
+        <field name="Name" type="NameTableFieldDefinition" value="Spellstrike_Miss" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6f0e4d5bg08ddge893g4ccegd685d25de85e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h605c4816ge25fg4f3ag0630gf9fdce9933e0" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BoomingBlade" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Spellstrike_Miss);CriticalHit(AttackRoll,Success,Never);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded;OnSpellCast;OnAttack;OnMove" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e0d58b93-5501-4e42-9cf1-9460e7551777" />
+        <field name="Name" type="NameTableFieldDefinition" value="Spellstrike_FreeAttackSpell" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3e4e119fg5d05ga26cgf7cdg8eaa7ff00358" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc6e363d9g690agbb7bg2017g6e3f20946f46" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BoomingBlade" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(IsSpell() and (HasStringInSpellRoll('Attack') or (HasStringInSpellRoll('Check') and HasSpellFlag(SpellFlags.Attack))),ModifyUseCosts(Replace,ActionPoint,0,0,ActionPoint),ModifyIconGlow(),ModifyTargetRadius(Override,2),ModifyNumberOfTargets(Override,1));" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded;OnSpellCast;OnAttack;OnMove" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="375b863a-4ef0-414e-848d-a1d73658a97a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Spellstrike_FreeSpell" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5dfc3b05gf537g535fg065cg46dcce546079" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="haf5ec86eg9d3fgb4ceg2781g420d6d0e4c08" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BoomingBlade" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(IsSpell(),ModifyUseCosts(Replace,ActionPoint,0,0,ActionPoint),ModifyIconGlow(),ModifyTargetRadius(Override,2));" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded;OnSpellCast;OnAttack;OnMove" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="97fd5dc7-948e-47b9-b8df-847146679b8a" />
+        <field name="Name" type="NameTableFieldDefinition" value="RangedSpellstrike_FreeAttackSpell" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5327dd0fg30fag3746g128dg51310035dc92" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb6c879a4gf42bg464dg3d83gb6b6ca051557" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BoomingBlade" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(IsSpell() and (HasStringInSpellRoll('Attack') or (HasStringInSpellRoll('Check') and HasSpellFlag(SpellFlags.Attack))),ModifyUseCosts(Replace,ActionPoint,0,0,ActionPoint),ModifyIconGlow(),ModifyTargetRadius(Override,36),ModifyNumberOfTargets(Override,1));" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3077757e-e32c-424c-b53a-453d60f2f8a0" />
+        <field name="Name" type="NameTableFieldDefinition" value="RangedSpellstrike_FreeSpell" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8f3492b0gb3e0g5d28gfa42g5a8682eb5765" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2ef90d6cg41c2g1962g55ceg5461ede3ace0" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BoomingBlade" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(IsSpell(),ModifyUseCosts(Replace,ActionPoint,0,0,ActionPoint),ModifyIconGlow(),ModifyTargetRadius(Override,36));" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ecf9e9e0-8516-4bc6-8ce7-1fa1eca85a2e" />
+        <field name="Name" type="NameTableFieldDefinition" value="ThunderousStrikeHitStatus" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h003c77c6g3615gda9bg33b5g4e4843b24a9b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf85dc108g6c29g0340g4423g6450e7024a0f" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Thunderwave" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ThunderousStrikeHit);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6517ca5d-3285-454f-879a-c6d356fa0a32" />
+        <field name="Name" type="NameTableFieldDefinition" value="DimensionalAssaultHitStatus" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h90ab534cg12d1gf789g56e4gb748478dff8a" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8e93d21fge5dfg95b9g3499gf940dcec3188" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_Invisibility" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_DimensionalAssaultHit);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="95b0cf3e-3083-472f-86e8-ecd8cbf39f12" />
+        <field name="Name" type="NameTableFieldDefinition" value="SureStrikeImmunity" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7c6a296cg914ag2db0g4655gb4cb0cdc755c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h63dbf5dcg2b7fg78eeg2880g0daeca238aa6" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_TrueStrike" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="28144a54-43b9-40bf-82de-c5780c9e89e6" />
+        <field name="Name" type="NameTableFieldDefinition" value="MagusAnalysis" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1bec57bfg66aagd04ag74f8g3a8cd4c4cb05" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h407ad6b0g98f8g458dg18bag7407858a39fa" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_DetectThoughts" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SavingThrow,-2);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="094285a6-b4bd-4a49-82e0-9f31bd393d87" />
+        <field name="Name" type="NameTableFieldDefinition" value="MagusAnalysisImmunity" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf5bfb973ga3b2g5ac4g29f8gdbbdc338228b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h05cbc821ged2fg8d10g2ca3gc977f3505d4e" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_DetectThoughts" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

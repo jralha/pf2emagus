@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="b4f18c50-e2c0-4be6-9609-5367fef946db">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_7" />
+        <field name="UUID" type="IdTableFieldDefinition" value="4d02bfc1-75e6-42eb-acd9-126e65f43862" />
+        <field name="ProgressionUUID" type="GuidTableFieldDefinition" value="c7efa52d-d54d-4132-ad4a-44f15fcddb22" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+        <field name="Add" type="StringTableFieldDefinition" value="Projectile_ElectricArc;Projectile_FireBolt;Target_MageHand;Projectile_RayOfFrost;Shout_Shield_Cantrip;Target_MysticArmor_Base;Zone_BurningHands;Target_Grease;Target_Sleep;Projectile_MagicMissile" />
+        <field name="Comment" type="CommentTableFieldDefinition" value="Magus" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

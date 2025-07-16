@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="c496009d-a970-44a3-b882-7ed3364dc271">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f517f62d-d130-42b9-b50e-ce5fad036bd8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Spellstrike_Crit" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6750a576g65dfgac48gd777g07533f403909" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h63c18f56g2952gc884gccd5g2dee6da37d53" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BoomingBlade" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsSpell()):SetRoll(20);RemoveStatus(OBSERVER_OBSERVER,Spellstrike_Crit);" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="852b2317-5b95-4666-9409-6ecc060d3ec7" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Spellstrike_Hit" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7d374401gf223g4f16g318cg7ab9a7f0fca5" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdf3e231cgec7cg5b3fg08b0g7520184abafc" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BoomingBlade" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsSpell()):SetRoll(16);RemoveStatus(OBSERVER_OBSERVER,Spellstrike_Hit);" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3f817224-75e5-44ae-bb1a-899033d32a7a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Spellstrike_Miss" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h28bbbcaeg17feg79f2gfb8dgc4b859b6cb1c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1f34f736g2785g4499g9502g41040209006a" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BoomingBlade" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsSpell()):SetRoll(1);RemoveStatus(OBSERVER_OBSERVER,Spellstrike_Miss);" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

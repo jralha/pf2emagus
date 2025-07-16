@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="11fa382c-a1d2-45ba-913c-b13062365ce8">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2feb6e55-b9a3-44fa-b489-0da2581c9fe2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Magus2" />
+        <field name="Passives" type="StringTableFieldDefinition" value="FeatPrerequisites,Familiar,ForceFang,AcolyteInitiate,MartialInitiate,MagusAnalysis" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="43ee01c8-f43c-4952-a4c7-c7639d95341d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Magus4" />
+        <field name="Passives" type="StringTableFieldDefinition" value="FeatPrerequisites,FireRay,Moonbeam,StarlitEyes,DistractingSpellstrike,Magus_BrutishShove,Magus_SnaggingStrike,Magus_CombatGrab,Magus_SuddenCharge,Magus_PointBlank,Familiar,ForceFang,AcolyteInitiate,MartialInitiate,MagusAnalysis" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="23ead4cc-a354-44a8-80cc-95f183787c3d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Magus6" />
+        <field name="Passives" type="StringTableFieldDefinition" value="FeatPrerequisites,AttackOfOpportunity,FireRay,Moonbeam,StarlitEyes,DistractingSpellstrike,Magus_BrutishShove,Magus_SnaggingStrike,Magus_CombatGrab,Magus_SuddenCharge,Magus_PointBlank,Familiar,ForceFang,AcolyteInitiate,MartialInitiate,MagusAnalysis" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9a7905ad-7500-484a-9fa3-f4234f45e3f4" />
+        <field name="Name" type="NameTableFieldDefinition" value="Magus8" />
+        <field name="Passives" type="StringTableFieldDefinition" value="FeatPrerequisites,SpellswipeToggle,QuickShieldBlock,Magus_DualHandedAssault,Magus_SlamDown,Magus_DoubleShot,Magus_Swipe,AttackOfOpportunity,FireRay,Moonbeam,StarlitEyes,DistractingSpellstrike,Magus_BrutishShove,Magus_SnaggingStrike,Magus_CombatGrab,Magus_SuddenCharge,Magus_PointBlank,Familiar,ForceFang,AcolyteInitiate,MartialInitiate,MagusAnalysis" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1363d85a-1852-480b-a339-625a6613bce2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Magus10" />
+        <field name="Passives" type="StringTableFieldDefinition" value="FeatPrerequisites,DimensionalDisappearance,RapidRecharge,SpellswipeToggle,QuickShieldBlock,Magus_DualHandedAssault,Magus_SlamDown,Magus_DoubleShot,Magus_Swipe,AttackOfOpportunity,FireRay,Moonbeam,StarlitEyes,DistractingSpellstrike,Magus_BrutishShove,Magus_SnaggingStrike,Magus_CombatGrab,Magus_SuddenCharge,Magus_PointBlank,Familiar,ForceFang,AcolyteInitiate,MartialInitiate,MagusAnalysis" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="441d626a-e064-427c-b9cb-e0aa9bc4751f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Magus12" />
+        <field name="Passives" type="StringTableFieldDefinition" value="FeatPrerequisites,Magus_TripleShot,Magus_DazingBlow,Magus_AdvantageousAssault,DimensionalDisappearance,RapidRecharge,SpellswipeToggle,QuickShieldBlock,Magus_DualHandedAssault,Magus_SlamDown,Magus_DoubleShot,Magus_Swipe,AttackOfOpportunity,FireRay,Moonbeam,StarlitEyes,DistractingSpellstrike,Magus_BrutishShove,Magus_SnaggingStrike,Magus_CombatGrab,Magus_SuddenCharge,Magus_PointBlank,Familiar,ForceFang,AcolyteInitiate,MartialInitiate,MagusAnalysis" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

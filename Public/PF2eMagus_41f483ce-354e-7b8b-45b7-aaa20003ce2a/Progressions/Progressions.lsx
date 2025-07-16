@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="200"/>
+    <region id="Progressions">
+        <node id="root">
+            <children>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ProficiencyBonus(Skill,Perception);ProficiencyBonus(Skill,Arcana);Proficiency(LightArmor);ProficiencyBonus(Skill,Perception);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Constitution);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(SpellSlot,1,1)"/>
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="Magus"/>
+                    <attribute id="PassivesAdded" type="LSString" value="PathfinderStatBoosts;WillExpert;FortitudeExpert;UnarmedABP;UnlockedSpellSlotLevel1;FeatPrerequisites;AnchorPosition;RechargeSpellstrike;SureStrike;SpellstrikeToggle"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSkills(9f3a9f8d-f645-40b5-b36f-fb079b7b805e,6);SelectSpells(3cae2e56-9871-4cef-bba6-96845ea765fa,5,0,,,,AlwaysPrepared);SelectSpells(11f331b0-e8b7-473b-9d1f-19e8e4178d7d,5,0);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);"/>
+                    <attribute id="TableUUID" type="guid" value="c7efa52d-d54d-4132-ad4a-44f15fcddb22"/>
+                    <attribute id="UUID" type="guid" value="a75e36c9-e6e2-47bb-aa24-7a74edaab7ed"/>
+                    <children>
+                        <node id="SubClasses">
+                            <children>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="1369dbc6-5af6-4bf6-a96a-b4c82a326f75"/>
+                                </node>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="c761a9eb-3d58-4838-aa9d-5e392e3337ae"/>
+                                </node>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="5a6d5ff1-b705-47a7-9959-5814c2c228cd"/>
+                                </node>
+                                <node id="SubClass">
+                                    <attribute id="Object" type="guid" value="02770420-1ace-4808-aa8f-97146fa5e9ad"/>
+                                </node>
+                            </children>
+                        </node>
+                    </children>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,1)"/>
+                    <attribute id="Level" type="uint8" value="2"/>
+                    <attribute id="Name" type="LSString" value="Magus"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(2feb6e55-b9a3-44fa-b489-0da2581c9fe2,1,ClassFeat);SelectSpells(11f331b0-e8b7-473b-9d1f-19e8e4178d7d,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="c7efa52d-d54d-4132-ad4a-44f15fcddb22"/>
+                    <attribute id="UUID" type="guid" value="9c4fc5c1-379e-4591-94dc-2d3ffd602457"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,2)"/>
+                    <attribute id="Level" type="uint8" value="3"/>
+                    <attribute id="Name" type="LSString" value="Magus"/>
+                    <attribute id="PassivesAdded" type="LSString" value="UnlockedSpellSlotLevel2"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,1);SelectPassives(8804a4ac-d0db-485b-844c-febda35adb37,1,GeneralFeat);SelectSpells(5cb09b20-2b48-4598-b938-dce0aea62d7f,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="c7efa52d-d54d-4132-ad4a-44f15fcddb22"/>
+                    <attribute id="UUID" type="guid" value="a3935c7a-758a-4dfe-9040-c7edc89292e4"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,1,2)"/>
+                    <attribute id="Level" type="uint8" value="4"/>
+                    <attribute id="Name" type="LSString" value="Magus"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(43ee01c8-f43c-4952-a4c7-c7639d95341d,1,ClassFeat);SelectSpells(5cb09b20-2b48-4598-b938-dce0aea62d7f,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="c7efa52d-d54d-4132-ad4a-44f15fcddb22"/>
+                    <attribute id="UUID" type="guid" value="1c189cb9-ae4c-47e6-96b3-39f2a4d3df0d"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,3);ActionResource(SpellSlot,-2,1)"/>
+                    <attribute id="Level" type="uint8" value="5"/>
+                    <attribute id="Name" type="LSString" value="Magus"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WeaponExpert;ReflexExpert;UnlockedSpellSlotLevel3"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(0cffd48f-3374-4126-a0a2-14e5923baee0,4,AbilityBoosts);SelectSkillsExpertise(f974ebd6-3725-4b90-bb5c-2b647d41615d,1);SelectSpells(b8097c73-d37e-4c56-8aa0-6c889e1c79fb,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="c7efa52d-d54d-4132-ad4a-44f15fcddb22"/>
+                    <attribute id="UUID" type="guid" value="dcc3fc36-3daf-4927-a060-509e3e19e22c"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="6"/>
+                    <attribute id="Name" type="LSString" value="Magus"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(23ead4cc-a354-44a8-80cc-95f183787c3d,1,ClassFeat);SelectSpells(b8097c73-d37e-4c56-8aa0-6c889e1c79fb,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="c7efa52d-d54d-4132-ad4a-44f15fcddb22"/>
+                    <attribute id="UUID" type="guid" value="928fc7ce-aecd-4889-83ac-7b9c1348a48b"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,4)"/>
+                    <attribute id="Level" type="uint8" value="7"/>
+                    <attribute id="Name" type="LSString" value="Magus"/>
+                    <attribute id="PassivesAdded" type="LSString" value="WeaponSpecializationExpert;WillMaster;UnlockedSpellSlotLevel4"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(8804a4ac-d0db-485b-844c-febda35adb37,1,GeneralFeat);SelectPassives(39ca6ce9-5cb9-458d-bdb9-6ddccd421541,1,SkillIncrease);SelectSpells(dfcf7153-ba05-4740-9c18-395941209728,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="c7efa52d-d54d-4132-ad4a-44f15fcddb22"/>
+                    <attribute id="UUID" type="guid" value="ede79dd0-1dd1-480f-ba66-ce9a0c48c5d3"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
+                    <attribute id="Level" type="uint8" value="8"/>
+                    <attribute id="Name" type="LSString" value="Magus"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(9a7905ad-7500-484a-9fa3-f4234f45e3f4,1,ClassFeat);SelectSpells(dfcf7153-ba05-4740-9c18-395941209728,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="c7efa52d-d54d-4132-ad4a-44f15fcddb22"/>
+                    <attribute id="UUID" type="guid" value="7119dc12-6caf-4bdf-b2da-ae0e139ce4d2"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,5);ActionResource(SpellSlot,-2,3)"/>
+                    <attribute id="Level" type="uint8" value="9"/>
+                    <attribute id="Name" type="LSString" value="Magus"/>
+                    <attribute id="PassivesAdded" type="LSString" value="PerceptionIncrease;SpellExpert;WillMaster;UnlockedSpellSlotLevel5"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(39ca6ce9-5cb9-458d-bdb9-6ddccd421541,1,SkillIncrease);SelectSpells(423ba380-9025-4a50-8e63-a1a03e10f9b1,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="c7efa52d-d54d-4132-ad4a-44f15fcddb22"/>
+                    <attribute id="UUID" type="guid" value="90bcf8cc-7ef9-48fc-90be-ad887c9b24d6"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="10"/>
+                    <attribute id="Name" type="LSString" value="Magus"/>
+                    <attribute id="PassivesAdded" type="LSString" value="UnarmedABP_Rank2"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(63cb872f-9456-4a6f-be74-491cd179fa35,4,AbilityBoosts);SelectPassives(1363d85a-1852-480b-a339-625a6613bce2,1,ClassFeat);SelectSpells(423ba380-9025-4a50-8e63-a1a03e10f9b1,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="c7efa52d-d54d-4132-ad4a-44f15fcddb22"/>
+                    <attribute id="UUID" type="guid" value="8e21c3e3-28e8-422c-8598-fb8a72c8a130"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Boosts" type="LSString" value="ActionResource(SpellSlot,2,6);ActionResource(SpellSlot,-2,4);ActionResource(SpellSlot,-2,2);ActionResource(SpellSlot,2,3)"/>
+                    <attribute id="Level" type="uint8" value="11"/>
+                    <attribute id="Name" type="LSString" value="Magus"/>
+                    <attribute id="PassivesAdded" type="LSString" value="ACExpert"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(8804a4ac-d0db-485b-844c-febda35adb37,1,GeneralFeat);SelectPassives(39ca6ce9-5cb9-458d-bdb9-6ddccd421541,1,SkillIncrease);SelectSpells(b623e9d5-dd51-4acd-940b-6f3fc9955889,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="c7efa52d-d54d-4132-ad4a-44f15fcddb22"/>
+                    <attribute id="UUID" type="guid" value="3fa948ac-54d3-4545-b081-030f90b8954a"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="AllowImprovement" type="bool" value="false"/>
+                    <attribute id="Level" type="uint8" value="12"/>
+                    <attribute id="Name" type="LSString" value="Magus"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(441d626a-e064-427c-b9cb-e0aa9bc4751f,1,ClassFeat);SelectSpells(b623e9d5-dd51-4acd-940b-6f3fc9955889,2,0)"/>
+                    <attribute id="TableUUID" type="guid" value="c7efa52d-d54d-4132-ad4a-44f15fcddb22"/>
+                    <attribute id="UUID" type="guid" value="43ba2b68-3616-44e2-b401-a04466508391"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="LaughingShadow"/>
+                    <attribute id="PassivesAdded" type="LSString" value="ArcaneCascade_LaughingShadow;DimensionalAssault;"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="8f83ac7a-6f05-463a-baf6-aa77183ce9d6"/>
+                    <attribute id="UUID" type="guid" value="0eb52363-18a8-40f8-ad62-c6505c9589c1"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="SparklingTarge"/>
+                    <attribute id="PassivesAdded" type="LSString" value="ShieldBlock;ArcaneCascade_SparklingTarge;ShieldingStrike;"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="2b216dde-e1a5-4805-bc21-232137fbf70b"/>
+                    <attribute id="UUID" type="guid" value="b162ed6e-ec1c-4cbe-94f7-efd4adbdf2b3"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="StarlitSpan"/>
+                    <attribute id="PassivesAdded" type="LSString" value="ArcaneCascade;ShootingStar;RangedSpellstrikeToggle"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="abade1ce-8d94-4f18-bf64-fa11f7395c98"/>
+                    <attribute id="UUID" type="guid" value="66cd6052-490d-4815-ba79-0d09b3b91717"/>
+                </node>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="InexorableIron"/>
+                    <attribute id="PassivesAdded" type="LSString" value="ArcaneCascade_InexorableIron;ThunderousStrike;"/>
+                    <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="TableUUID" type="guid" value="b3fd8c47-4710-4f55-876f-9216310c9227"/>
+                    <attribute id="UUID" type="guid" value="4505fb1c-c5ff-42e6-aa81-8dba056279bb"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

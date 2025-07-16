@@ -1,0 +1,482 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="3e76b74c-a5ae-4268-944a-aa9c31e2185e">
+  <stat_objects>
+    <stat_object color="#FF8A2BE2" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f458e82b-19d6-4ea7-acfe-e1e2f9532a3a" />
+        <field name="Name" type="NameTableFieldDefinition" value="MAGUS" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="93abcd46-5fd0-4fe4-9b39-806e9f9d29c4" />
+        <field name="Name" type="NameTableFieldDefinition" value="SpellstrikeToggle" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3a4f0d5bg60c4g1fe9gcb57g286985856a8e" version="2" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="ToggledDefaultAddToHotbar;IsToggled;MetaMagic" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(IsSpell() and (HasStringInSpellRoll('Attack') or (HasStringInSpellRoll('Check') and HasSpellFlag(SpellFlags.Attack))),ModifyIconGlow(),ModifyUseCosts(Replace,ActionPoint,2,0,ActionPoint),ModifyTargetRadius(Override,1.5),ModifyNumberOfTargets(Override,1),ModifySpellRoll('Attack(AttackType.MeleeSpellAttack)','Attack(AttackType.MeleeWeaponAttack)'),ModifySpellRoll('Attack(AttackType.RangedSpellAttack)','Attack(AttackType.MeleeWeaponAttack)'),ModifyTooltipDescription());" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(IsSpell() and (HasStringInSpellRoll('Attack') or (HasStringInSpellRoll('Check') and HasSpellFlag(SpellFlags.Attack)))):ApplyStatus(SELF,Spellstrike_Discharged,100,-1);IF(IsSpell() and (HasStringInSpellRoll('Attack') or (HasStringInSpellRoll('Check') and HasSpellFlag(SpellFlags.Attack))) and not IsMiss()):DealDamage(max(1,MainMeleeWeapon), MainMeleeWeaponDamageType);IF(IsSpell() and (HasStringInSpellRoll('Attack') or (HasStringInSpellRoll('Check') and HasSpellFlag(SpellFlags.Attack))) and not IsMiss()):ExecuteWeaponFunctors(MainHand);IF(IsSpell() and (HasStringInSpellRoll('Attack') or (HasStringInSpellRoll('Check') and HasSpellFlag(SpellFlags.Attack)))):ApplyStatus(SELF,MAP_PENALTY_3RD,100,1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h96eb8d1dgb9f7g92cag5182g75b50698778a" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BoomingBlade" />
+        <field name="EnabledConditions" type="StringTableFieldDefinition" value="not HasStatus('Spellstrike_Discharged') and CanUseWeaponActions();" />
+        <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved;OnStatusApplied;OnEquip" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="ToggleGroup" type="StringTableFieldDefinition" value="Spellstrike" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsSpell() and (HasStringInSpellRoll('Attack') or (HasStringInSpellRoll('Check') and HasSpellFlag(SpellFlags.Attack));" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4b011896-ccef-4025-b79e-afdd24547096" />
+        <field name="Name" type="NameTableFieldDefinition" value="RangedSpellstrikeToggle" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="93abcd46-5fd0-4fe4-9b39-806e9f9d29c4" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h92705afegec47ga60fgca8eg5747d089b0ff" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(IsSpell() and (HasStringInSpellRoll('Attack') or (HasStringInSpellRoll('Check') and HasSpellFlag(SpellFlags.Attack))),ModifyIconGlow(),ModifyUseCosts(Replace,ActionPoint,2,0,ActionPoint),ModifyTargetRadius(Override,50),ModifyNumberOfTargets(Override,1),ModifySpellRoll('Attack(AttackType.MeleeSpellAttack)','Attack(AttackType.RangedWeaponAttack)'),ModifySpellRoll('Attack(AttackType.RangedSpellAttack)','Attack(AttackType.RangedWeaponAttack)'),ModifyTooltipDescription());" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(IsSpell()):ApplyStatus(SELF,Spellstrike_Discharged,100,-1);IF(IsSpell() and not IsMiss()):DealDamage(max(1,MainRangedWeapon), MainRangedWeaponDamageType);IF(IsSpell() and not IsMiss()):ExecuteWeaponFunctors(MainHand);IF(IsSpell()):ApplyStatus(SELF,MAP_PENALTY_3RD,100,1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_LightningArrow" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6a33a019-dbea-4c5d-b418-e6b47e57d37f" />
+        <field name="Name" type="NameTableFieldDefinition" value="SpellstrikeOld" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9c600dd9g677bg6663gbc29gb01f9248683c" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BoomingBlade" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Spellstrike);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h815f9196g6099g7724g4799gd767b31c9b87" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8a44c4f7-79a3-4fc0-baa9-5e851eb98a15" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneCascade" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc297e550g3116gd3e5gb748g0ce086eabfae" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_ShadowBlade" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_ArcaneCascade);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="heee8a60cg9cedgb88ag9d1dg7eaffd82b7b1" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d993397b-79a3-4089-a742-d804449fd02a" />
+        <field name="Name" type="NameTableFieldDefinition" value="RangedSpellstrikeOld" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h170eaa52g962dgb5c8g256cg7aa619e6cbc2" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_LightningArrow" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_RangedSpellstrike);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4fbd99c9g2b42ge59dg8821gdbcd1ea764b2" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="004928ef-3137-4d2f-9748-c5e877977b18" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneCascade_LaughingShadow" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3bea4e74g8835gce5bgd0f8gf12b347f5ea6" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_ShadowBlade" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_ArcaneCascadeLS);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc5cd1fa2g2898gb541gc6b0gf4ab57ffeded" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7b23727a-442a-4e52-93fa-015abb67d23f" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneCascade_InexorableIron" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha81b8fe3g95afg3081gaed2gdeba33afbcb1" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_ShadowBlade" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_ArcaneCascadeII);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6397e118gcab9ga0aegd1b3g3c4f214f1473" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e6a56998-832b-4b3b-bf8c-fec00293f39e" />
+        <field name="Name" type="NameTableFieldDefinition" value="ArcaneCascade_SparklingTarge" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3fb7f1b4g2c67g6e96g18e0g881a86e942ed" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_ShadowBlade" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_ArcaneCascadeST);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h77294a83g2b48gf05ag170fg86f13de6d923" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f7bf9487-1285-475d-aa50-c26a543770df" />
+        <field name="Name" type="NameTableFieldDefinition" value="ShootingStar" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h67433c95g7135g79a6g3dc6g6c366d82c4a1" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;KiPoint:1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h03cf8001g0944ga6d7gb6b1ge62dd26a5ed4" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_LightningArrow" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_ShootingStar);ActionResource(KiPoint,1,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d4f7da29-f6f7-46c4-a99f-2c05a8e758fb" />
+        <field name="Name" type="NameTableFieldDefinition" value="DimensionalAssault" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h80a69a33g4631ga76cg9c56g17a279d21d8a" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;KiPoint:1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h360a8a8dga72ege29ag717fgebb9710ca357" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_Invisibility" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_DimensionalAssault);ActionResource(KiPoint,1,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ded3c022-e87c-48ac-9cc0-316bc1cd3d26" />
+        <field name="Name" type="NameTableFieldDefinition" value="ShieldingStrike" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hcede8ca9ga7cbg69f0g356age140090a0f95" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;KiPoint:1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb704b987g3f5cg0b01g8b51g21e35d3071e3" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_GuardianOfFaith" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_ShieldingStrike);UnlockSpell(Shout_Shield_Cantrip);ActionResource(KiPoint,1,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="98c25bcb-b9f3-4de1-b732-76abb2c18112" />
+        <field name="Name" type="NameTableFieldDefinition" value="ThunderousStrike" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h13c8c3f4g9dbag1558g7201g594fd0750853" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;KiPoint:1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5f8f903cgec3dg77acg339eg52881505a8b4" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Thunderwave" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Zone_ThunderousStrike);ActionResource(KiPoint,1,0);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3ee949b4-2894-476f-bd62-881657528fcd" />
+        <field name="Name" type="NameTableFieldDefinition" value="SpellStrikeCleanup" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf50e1f70g92c0g04e5g56b5g246ea2441665" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BoomingBlade" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_MagusCleanup);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hff886811g11c2g6a29g611cg130ba39c959e" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6d24c9d5-0806-4d9e-be57-f8c7bfa1bf2b" />
+        <field name="Name" type="NameTableFieldDefinition" value="SureStrike" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2234e551gc983gd005ge840g8b85460e8b14" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6584b056g51f6g598ag2467g2cd04c79b23b" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_TrueStrike" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_SureStrike);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="97cd6da5-6243-46ec-a8e1-7dc9ff1c126e" />
+        <field name="Name" type="NameTableFieldDefinition" value="RechargeSpellstrike" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0ca2e9fcg79ebgda6ag30bbgce0965074c01" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Skill_Sorcerer_CreateSorceryPoints_1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_RechargeSpellstrike);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h020760b5g6c6ag0719g1cfdg58efbd770175" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF8A2BE2" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0cdeab30-5c4b-404d-8b8a-00094c8918fe" />
+        <field name="Name" type="NameTableFieldDefinition" value="LEVEL2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8f0e7e88-0ce7-4d4b-9a70-672e8d0f7f71" />
+        <field name="Name" type="NameTableFieldDefinition" value="ForceFang" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb78825dfg6413g0870g4080gb4187e9787d0" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;KiPoint:1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not HasPassive('RangedSpellstrike',context.Source)):UnlockSpell(Projectile_ForceFang);IF(HasPassive('RangedSpellstrike',context.Source)):UnlockSpell(Projectile_ForceFangStarlit);ActionResource(KiPoint,1,0);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_MagicMissile" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc1f3bfddg4644g04cdg59d9g3778f8445159" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9b4c39d7-b222-4859-ad41-18e7173540c8" />
+        <field name="Name" type="NameTableFieldDefinition" value="ExpansiveSpellstrike" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BoomingBlade" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h066fb1bdg216fg2230g23c7g35a3fbd225ef" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2c97c73eg86b5gbf40gf35egfb79a859e1c6" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2295aa8c-dcc5-4fe3-8872-bbb56e728353" />
+        <field name="Name" type="NameTableFieldDefinition" value="AcolyteInitiate" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h262dc3e5geb4cg0068gc042g6e908aa43c74" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0b29bc88gb4c1gf16dg9fcfg74b6835f7d37" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_GuidingBolt" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_DivineLance);UnlockSpell(Target_Guidance);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="84b0fc9e-326a-40a3-8e85-a09941f5c1a1" />
+        <field name="Name" type="NameTableFieldDefinition" value="MartialInitiate" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4898f09ag0528g6d2bg6e07g76bcae501a8c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3ab1cd44g9d16gb8cdg5ee4g4f06811520a1" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_HeavilyArmored" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Proficiency(HeavyArmor);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="778f4e7e-db16-45c0-b8cb-1c9b78775fef" />
+        <field name="Name" type="NameTableFieldDefinition" value="MagusAnalysis" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h119ed82cgbdbeg9d6aga07fgf0b0c8ab1ac7" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hde91deb6g7ab7gfb2dg2b6cgadd3dbaa797d" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_DetectThoughts" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_MagusAnalysis);" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF8A2BE2" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4ac1e588-19cf-429a-b380-c222c0b7d614" />
+        <field name="Name" type="NameTableFieldDefinition" value="LEVEL4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b13e2570-df83-4e4c-9406-cdaf264a3eec" />
+        <field name="Name" type="NameTableFieldDefinition" value="FireRay" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h90dd1caeg17afgd9cdg83b2g7236242c7d42" version="2" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:2;KiPoint:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monster_Cambion_FireRay" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_FireRayDomain);ActionResource(KiPoint,1,0);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha40311a4gf0ecg0e83g4ee2g00dcd5a3fe62" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="HasPassive('AcolyteInitiate',context.Source);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f184e25d-4665-4e39-913b-521af58265a1" />
+        <field name="Name" type="NameTableFieldDefinition" value="Moonbeam" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3991d619g1564g96f1g168fg1da5fcdf3643" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4b6816f6g0c26g109agaed0gf6244075c412" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:2;KiPoint:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_ScorchingRay" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_MoonbeamPathfinder);ActionResource(KiPoint,1,0);" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="HasPassive('AcolyteInitiate',context.Source);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="82cafb97-a615-463d-bf1d-a67e4cc7f289" />
+        <field name="Name" type="NameTableFieldDefinition" value="StarlitEyes" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="eb354e5b-a6cb-4f67-b584-121b5cd946a0" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2fc1132cg75efg0c04gb279g8a69e8db77ea" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e1de44c7-4053-4ef0-b170-86e8afb9d00e" />
+        <field name="Name" type="NameTableFieldDefinition" value="DistractingSpellstrike" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h76a44bf4gdeb2ga2a3g2746g28dd90ef5a77" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:0" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_PrecisionAttack" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_LaughingShadow_FreeFeint);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd01e614bgcd62g4fffgabaagc61901df4993" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cd2f33c3-fdb0-4c33-824d-d576ed9589f9" />
+        <field name="Name" type="NameTableFieldDefinition" value="Magus_BrutishShove" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ef908a08-77d5-4001-8e80-f8740dfd3f98" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha78a96a3g82eeg7fbdgdbf0g04d50ebddd41" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_BrutishShove);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h41a92c64g9d7bg2046g4b0cg7340a5c19161" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="HasPassive('MartialInitiate',context.Source);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="34510a27-55fe-406a-9a7d-fc29d0e69e92" />
+        <field name="Name" type="NameTableFieldDefinition" value="Magus_SnaggingStrike" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f298046c-1a98-4314-b80b-a7e315f99f28" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha2e3fb58ge20dgd518gd13ag4194585b92a2" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_SnaggingStrike);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6339fc56g228fgf462g2497g83db03f4e5e4" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="HasPassive('MartialInitiate',context.Source);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bd6740bd-d5b8-4c92-b3a4-b4726e542ae8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Magus_CombatGrab" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="c8f45fd3-7ead-4caf-a25f-9b8e7eb77f18" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc4cfbe2fg79f7g62c4gf9eege82766934098" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_CombatGrab);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdd49fd1dgede9ge785g13ebg7f08db373793" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="HasPassive('MartialInitiate',context.Source);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d32776ac-55e4-4892-b8b8-7acb59d7bb7b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Magus_SuddenCharge" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="466c8124-e68c-4ff1-895c-16db54b21581" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha099e429g80fcg4352gfb9eg7155a0312528" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_SuddenCharge);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3a61b7bbgcdeegbaa9g5f92g5f67ad758b03" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="HasDashStatus() and HasActionResource('Flourish', 1 , 0, false, false) and HasPassive('MartialInitiate',context.Source);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b8b12ee7-6e7e-42d8-91c5-4ae39f2f70ed" />
+        <field name="Name" type="NameTableFieldDefinition" value="Magus_PointBlank" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3c5d518d-5145-474d-8264-76195289d7c5" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he62b5da7g2d72g8fddg0bfbg412b598d28fb" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_PointBlankStance);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h99fcf55bg3992gfb67g08b4g07d7f09d5172" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="HasPassive('MartialInitiate',context.Source);" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF8A2BE2" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="84a07d71-a8dc-4191-a955-b5690036f71c" />
+        <field name="Name" type="NameTableFieldDefinition" value="LEVEL6" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF8A2BE2" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="77104f56-a2cf-4d98-8193-cf1e747c45f7" />
+        <field name="Name" type="NameTableFieldDefinition" value="LEVEL8" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7192a6e6-fe0f-42dd-80c8-134d6d339890" />
+        <field name="Name" type="NameTableFieldDefinition" value="Magus_DualHandedAssault" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="708432ad-e7c9-4efe-acd4-155890cb0e4b" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7720ce68g7d52gc502g7484ga0feb5950f40" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_DualHandedAssault);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4859ccabg8c9dgfe20g53b7gd27c7b5d7f24" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="HasPassive('MartialInitiate',context.Source);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a5dd398c-af01-4378-867c-7ed263938343" />
+        <field name="Name" type="NameTableFieldDefinition" value="Magus_SlamDown" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="050cf83a-c147-4114-8fbb-2b15ac39f005" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="heea9f20eg588dg6ee9g8678g2219627fc2dd" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_SlamDown);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8c2a8c8eg4cf4g1920g70bbge4894a7f3054" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="HasPassive('MartialInitiate',context.Source);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f08f7fdc-3135-4964-a0fb-fcaca0150ffc" />
+        <field name="Name" type="NameTableFieldDefinition" value="Magus_DoubleShot" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b10449b9-d1af-4cfb-96f6-cec1198bad9a" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0e60d6d2g7472g91f3gc97dg0a5333048480" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_DoubleShot);IF(SpellId('Projectile_DoubleShot')):RollBonus(RangedWeaponAttack,-2);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h022e51b2g9476g9629g7f35g8567a6be2055" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasPassive('TripleShot',context.Source) and HasPassive('MartialInitiate',context.Source);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="27eb39b0-03a4-42b4-8111-730f4a49185f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Magus_Swipe" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d5e80187-e094-44ed-8445-acb1539c2148" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4dfad4a8g6fe1ga3e7gc6b6ge3cf91512a10" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Swipe);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h60b75799gf3a3gcc85ga5abg6f1849e3f100" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="HasPassive('MartialInitiate',context.Source);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f1495a10-a00e-47b2-addd-52720f2375b1" />
+        <field name="Name" type="NameTableFieldDefinition" value="SpellswipeToggle" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="93abcd46-5fd0-4fe4-9b39-806e9f9d29c4" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1ef16429ge0d6ga5c4g3923g0c8be5c7a104" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcf1f9aa0g70cag0d0bg5006g34b6110eb384" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Cleave_New" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(IsSpell() and (HasStringInSpellRoll('Attack') or (HasStringInSpellRoll('Check') and HasSpellFlag(SpellFlags.Attack))),ModifyIconGlow());UnlockSpellVariant(IsSpell() and (HasStringInSpellRoll('Attack') or (HasStringInSpellRoll('Check') and HasSpellFlag(SpellFlags.Attack))),ModifyUseCosts(Replace,ActionPoint,3,0,ActionPoint));UnlockSpellVariant(IsSpell() and (HasStringInSpellRoll('Attack') or (HasStringInSpellRoll('Check') and HasSpellFlag(SpellFlags.Attack))),ModifyTargetRadius(Override,2),ModifyNumberOfTargets(Override,2));UnlockSpellVariant(IsSpell() and (HasStringInSpellRoll('Attack') or (HasStringInSpellRoll('Check') and HasSpellFlag(SpellFlags.Attack))),ModifySpellRoll('Attack(AttackType.MeleeSpellAttack)','Attack(AttackTypeMeleeWeaponAttack)'));UnlockSpellVariant(IsSpell() and (HasStringInSpellRoll('Attack') or (HasStringInSpellRoll('Check') and HasSpellFlag(SpellFlags.Attack))),ModifySpellRoll('Attack(AttackType.RangedSpellAttack)','Attack(AttackType.MeleeWeaponAttack)'));UnlockSpellVariant(not (HasStringInSpellRoll('Attack') or (HasStringInSpellRoll('Check') and not HasSpellFlag(SpellFlags.Attack))),ModifyUseCosts(Replace,ActionPoint,6,0,ActionPoint));" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ee26467d-25ab-4046-bf2b-497ce66f9442" />
+        <field name="Name" type="NameTableFieldDefinition" value="SpellswipeOld" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h427f8426g0bc3g3631gb1abg06ae1df51071" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h68394e77g49efg2173g4861gf0d0a8b3a8ef" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Cleave_New" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Spellswipe);" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF8A2BE2" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dee2c4b8-3333-4562-b7f3-dfa20f79a63c" />
+        <field name="Name" type="NameTableFieldDefinition" value="LEVEL10" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3b1ecfad-3de2-4859-b0a1-796ab77b77e8" />
+        <field name="Name" type="NameTableFieldDefinition" value="DimensionalDisappearance" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h73f5523fg6ec2g1b87g6bb8g3bd5cee9ea43" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5555f903gb353g5468g6189g427c1f1fcc01" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_Invisibility" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="35719e50-8eb2-417e-9914-953e0c41db40" />
+        <field name="Name" type="NameTableFieldDefinition" value="RapidRecharge" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="97cd6da5-6243-46ec-a8e1-7dc9ff1c126e" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h89171a2cgbcffgfc06g0355g2b37ae5ff3ae" version="1" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:0" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_RapidRecharge);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0545ff19g52d7gb0a5g41e1g13e4663d1aae" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF8A2BE2" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="994c8129-c68a-4296-9bad-e5e6841f839e" />
+        <field name="Name" type="NameTableFieldDefinition" value="LEVEL12" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fc445b8f-a0c7-484d-8eb9-157463264dcf" />
+        <field name="Name" type="NameTableFieldDefinition" value="Magus_TripleShot" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="419fa9ad-3d7e-45f5-acbc-8a7a0aa74be9" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="HasPassive('DoubleShot',context.Source) and HasPassive('MartialInitiate',context.Source);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_UpgradedDoubleShot);UnlockSpell(Projectile_TripleShot);IF(SpellId('Projectile_UpgradedDoubleShot')):RollBonus(RangedWeaponAttack,-2);IF(SpellId('Projectile_TripleShot')):RollBonus(RangedWeaponAttack,-4);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7598dff8-6edc-4e7d-b850-e016959fd5b3" />
+        <field name="Name" type="NameTableFieldDefinition" value="Magus_DazingBlow" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="d585564c-a5b8-4a2e-bd5f-d2433e503cae" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4eb898c1ga7dfgab94ga7b6gf03e67d9162e" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="HasPassive('MartialInitiate',context.Source);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_DazingBlow);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fab58674-4c28-4093-a7a3-b53d7f854b6f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Magus_AdvantageousAssault" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="89e4dd3b-d153-4b62-a375-a872093ff2e5" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd7d898bcgf50cg12cdgd50fgf4852f5779c6" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="HasPassive('MartialInitiate',context.Source);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_AdvantageousAssault);" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

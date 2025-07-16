@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="200"/>
+    <region id="SpellLists">
+        <node id="root">
+            <children>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Magus_TrueStrike"/>
+                    <attribute id="Spells" type="LSString" value="Target_TrueStrike"/>
+                    <attribute id="UUID" type="guid" value="bc9b21f6-8db8-480a-8025-15162eb53504"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

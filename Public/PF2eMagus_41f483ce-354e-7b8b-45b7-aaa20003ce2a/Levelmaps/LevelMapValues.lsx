@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="200"/>
+    <region id="LevelMapValues">
+        <node id="root">
+            <children>
+                <node id="LevelMapSeries">
+                    <attribute id="Level1" type="LSString" value="2"/>
+                    <attribute id="Level11" type="LSString" value="7"/>
+                    <attribute id="Level3" type="LSString" value="3"/>
+                    <attribute id="Level5" type="LSString" value="4"/>
+                    <attribute id="Level7" type="LSString" value="5"/>
+                    <attribute id="Level9" type="LSString" value="6"/>
+                    <attribute id="Name" type="FixedString" value="ThunderousStrike_Cone"/>
+                    <attribute id="PreferredClassUUID" type="guid" value="02770420-1ace-4808-aa8f-97146fa5e9ad"/>
+                    <attribute id="UUID" type="guid" value="902cf6ef-14ad-4762-be8b-f9d99061ff3f"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

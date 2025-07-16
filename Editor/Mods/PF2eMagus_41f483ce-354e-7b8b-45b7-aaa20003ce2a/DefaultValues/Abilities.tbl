@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="f01245cf-d242-4f5b-af85-f795d310ac2c">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_13" />
+        <field name="UUID" type="IdTableFieldDefinition" value="7d4c365a-1255-4311-b1c3-933f575b8889" />
+        <field name="ProgressionUUID" type="GuidTableFieldDefinition" value="b3fd8c47-4710-4f55-876f-9216310c9227" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+        <field name="DefaultValues" type="StringTableFieldDefinition" value="Strength;Intelligence" />
+        <field name="SelectorId" type="StringTableFieldDefinition" value="AbilityBonus" />
+        <field name="Comment" type="CommentTableFieldDefinition" value="Inexorable Iron" />
+        <field name="ClassUUID" type="GuidTableFieldDefinition" value="90ef3684-c58c-45f9-beb9-7be6f217dbb7" />
+        <field name="SubclassUUID" type="GuidTableFieldDefinition" value="02770420-1ace-4808-aa8f-97146fa5e9ad" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="006c0136-8dc4-4dcf-abb7-6dcd2ce1fc85" />
+        <field name="ProgressionUUID" type="GuidTableFieldDefinition" value="2b216dde-e1a5-4805-bc21-232137fbf70b" />
+        <field name="ClassUUID" type="GuidTableFieldDefinition" value="90ef3684-c58c-45f9-beb9-7be6f217dbb7" />
+        <field name="SubclassUUID" type="GuidTableFieldDefinition" value="c761a9eb-3d58-4838-aa9d-5e392e3337ae" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+        <field name="DefaultValues" type="StringTableFieldDefinition" value="Strength;Intelligence" />
+        <field name="SelectorId" type="StringTableFieldDefinition" value="AbilityBonus" />
+        <field name="Comment" type="CommentTableFieldDefinition" value="Sparkling Targe" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_2" />
+        <field name="UUID" type="IdTableFieldDefinition" value="f6a2061c-8728-487a-a9a0-0cd6d319d6ae" />
+        <field name="ProgressionUUID" type="GuidTableFieldDefinition" value="abade1ce-8d94-4f18-bf64-fa11f7395c98" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+        <field name="DefaultValues" type="StringTableFieldDefinition" value="Strength;Intelligence" />
+        <field name="SelectorId" type="StringTableFieldDefinition" value="AbilityBonus" />
+        <field name="Comment" type="CommentTableFieldDefinition" value="Starlit Span" />
+        <field name="ClassUUID" type="GuidTableFieldDefinition" value="90ef3684-c58c-45f9-beb9-7be6f217dbb7" />
+        <field name="SubclassUUID" type="GuidTableFieldDefinition" value="5a6d5ff1-b705-47a7-9959-5814c2c228cd" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="UUID" type="IdTableFieldDefinition" value="ebed5956-a86c-4d3f-97e0-40ef5da1b008" />
+        <field name="ProgressionUUID" type="GuidTableFieldDefinition" value="8f83ac7a-6f05-463a-baf6-aa77183ce9d6" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+        <field name="DefaultValues" type="StringTableFieldDefinition" value="Strength;Intelligence" />
+        <field name="SelectorId" type="StringTableFieldDefinition" value="AbilityBonus" />
+        <field name="Comment" type="CommentTableFieldDefinition" value="Laughing Shadow" />
+        <field name="ClassUUID" type="GuidTableFieldDefinition" value="90ef3684-c58c-45f9-beb9-7be6f217dbb7" />
+        <field name="SubclassUUID" type="GuidTableFieldDefinition" value="1369dbc6-5af6-4bf6-a96a-b4c82a326f75" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

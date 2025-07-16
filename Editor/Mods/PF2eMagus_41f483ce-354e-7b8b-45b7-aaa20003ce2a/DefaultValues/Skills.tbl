@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="db45b32f-877a-45bd-afb5-32e7d415d1e6">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_18" />
+        <field name="UUID" type="IdTableFieldDefinition" value="c3de9e92-69dc-4509-8abb-6bcf741d5514" />
+        <field name="ProgressionUUID" type="GuidTableFieldDefinition" value="c7efa52d-d54d-4132-ad4a-44f15fcddb22" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+        <field name="DefaultValues" type="StringTableFieldDefinition" value="Arcana;Insight;History;Investigation;Religion;Nature;Medicine;Stealth;Acrobatics;" />
+        <field name="Comment" type="CommentTableFieldDefinition" value="Magus" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>
