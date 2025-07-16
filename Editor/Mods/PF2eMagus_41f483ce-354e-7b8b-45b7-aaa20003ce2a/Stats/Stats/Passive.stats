@@ -19,9 +19,12 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h96eb8d1dgb9f7g92cag5182g75b50698778a" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_FlameBlade" />
         <field name="EnabledConditions" type="StringTableFieldDefinition" value="not HasStatus('Spellstrike_Discharged') and CanUseWeaponActions();" />
-        <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved;OnStatusApplied;OnEquip" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved;OnStatusApplied;OnEquip;OnMovedDistance;OnStatusRemove" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="ToggleGroup" type="StringTableFieldDefinition" value="Spellstrike" />
         <field name="Conditions" type="StringTableFieldDefinition" value="IsSpell() and (HasStringInSpellRoll('Attack') or (HasStringInSpellRoll('Check') and HasSpellFlag(SpellFlags.Attack));" />
+        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,Spellstriking,100,-1);" />
+        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(Spellstriking)" />
+        <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" value="d97491dc-10fe-4d5f-b88e-0d5ebb0a3731" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -33,6 +36,9 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(IsSpell() and (HasStringInSpellRoll('Attack') or (HasStringInSpellRoll('Check') and HasSpellFlag(SpellFlags.Attack))),ModifyIconGlow(),ModifyUseCosts(Replace,ActionPoint,2,0,ActionPoint),ModifyTargetRadius(Override,50),ModifyNumberOfTargets(Override,1),ModifySpellRoll('Attack(AttackType.MeleeSpellAttack)','Attack(AttackType.RangedWeaponAttack)'),ModifySpellRoll('Attack(AttackType.RangedSpellAttack)','Attack(AttackType.RangedWeaponAttack)'),ModifyTooltipDescription());" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(IsSpell()):ApplyStatus(SELF,Spellstrike_Discharged,100,-1);IF(IsSpell() and not IsMiss()):DealDamage(max(1,MainRangedWeapon), MainRangedWeaponDamageType);IF(IsSpell() and not IsMiss()):ExecuteWeaponFunctors(MainHand);IF(IsSpell()):ApplyStatus(SELF,MAP_PENALTY_3RD,100,1);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_LightningArrow" />
+        <field name="ToggleOnFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,RangedSpellstriking,100,-1);" />
+        <field name="ToggleOffFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(RangedSpellstriking)" />
+        <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" value="51dfc319-759d-481a-b496-95b4ea15b30f" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

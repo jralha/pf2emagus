@@ -126,7 +126,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha61f1b5cg28c9gcfc3g62adg1e904aaca421" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType); " />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeWeaponAttack" />
-        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_MenacingAttack" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Steady" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_MenacingAttack" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
@@ -146,6 +146,8 @@
         <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellSoundMagnitude" version="1" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
         <field name="FollowUpOriginalSpell" type="StringTableFieldDefinition" value="Zone_ThunderousStrike" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Barbarian_ElementalCleaver_Thunder" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_Barbarian_ElementalCleaver_Thunder" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -159,6 +161,10 @@
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="5db8c579-2840-4ece-9829-e356c5ab607d" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="16442173-97c5-424f-905b-b88d8b425e81" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="5164d339-37aa-475c-bb12-368c1e6acd58" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Action_Prepare_Item_ShadowBlade" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Action_Loop_Item_ShadowBlade" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Item_ShadowBlade" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Vocal_Component_EnchantWeapon" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -185,6 +191,8 @@
         <field name="SpellRoll" type="StringTableFieldDefinition" value="ConditionResult(true);" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
         <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Action_Prepare_Item_ShadowBlade" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Action_Loop_Item_ShadowBlade" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

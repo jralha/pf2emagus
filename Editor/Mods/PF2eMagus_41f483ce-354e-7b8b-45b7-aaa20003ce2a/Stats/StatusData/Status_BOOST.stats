@@ -136,7 +136,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="RangedSpellstrike_FreeAttackSpell" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5327dd0fg30fag3746g128dg51310035dc92" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb6c879a4gf42bg464dg3d83gb6b6ca051557" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_FlameBlade" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_LightningArrow" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(IsSpell() and (HasStringInSpellRoll('Attack') or (HasStringInSpellRoll('Check') and HasSpellFlag(SpellFlags.Attack))),ModifyUseCosts(Replace,ActionPoint,0,0,ActionPoint),ModifyIconGlow(),ModifyTargetRadius(Override,36),ModifyNumberOfTargets(Override,1));" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
@@ -148,7 +148,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="RangedSpellstrike_FreeSpell" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8f3492b0gb3e0g5d28gfa42g5a8682eb5765" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2ef90d6cg41c2g1962g55ceg5461ede3ace0" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_FlameBlade" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_LightningArrow" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(IsSpell(),ModifyUseCosts(Replace,ActionPoint,0,0,ActionPoint),ModifyIconGlow(),ModifyTargetRadius(Override,36));" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
@@ -210,6 +210,27 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Divination_DetectThoughts" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="31a81a3a-0c22-48ba-a812-3440da5de5af" />
+        <field name="Name" type="NameTableFieldDefinition" value="Spellstriking" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbb6eeca9ge288g1191gfbd9g7ef24e943701" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0e23fc1cg1760g4a42g52e8g5784c753285c" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_FlameBlade" />
+        <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" value="d97491dc-10fe-4d5f-b88e-0d5ebb0a3731" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6e968d5c-e254-4a06-a875-abef7aad8073" />
+        <field name="Name" type="NameTableFieldDefinition" value="RangedSpellstriking" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="31a81a3a-0c22-48ba-a812-3440da5de5af" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h23e6151fg077fg05f0gc0cag477d69bf807a" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h84529a0agf6afgde4dgf099g7ca9ec51131f" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_LightningArrow" />
+        <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" value="51dfc319-759d-481a-b496-95b4ea15b30f" />
       </fields>
     </stat_object>
   </stat_objects>

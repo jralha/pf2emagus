@@ -28,9 +28,9 @@
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1)" />
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="66388a6f-44dd-4c9f-a9e7-910c50e70755" />
         <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1,Thunder)" />
-        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Thunder_Gen_L1to3" />
-        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_Damage_Thunder_Gen_L1to3" />
-        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Damage_Thunder_Thunderwave_L1to3_01" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Barbarian_ElementalCleaver_Thunder" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Loop_Barbarian_ElementalCleaver_Thunder" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Barbarian_ElementalCleaver_Thunder" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="Range" type="IntegerTableFieldDefinition" value="5" />
