@@ -17,7 +17,7 @@
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(IsSpell() and (HasStringInSpellRoll('Attack') or (HasStringInSpellRoll('Check') and HasSpellFlag(SpellFlags.Attack)))):ApplyStatus(SELF,Spellstrike_Discharged,100,-1);IF(IsSpell() and (HasStringInSpellRoll('Attack') or (HasStringInSpellRoll('Check') and HasSpellFlag(SpellFlags.Attack))) and not IsMiss()):DealDamage(max(1,MainMeleeWeapon), MainMeleeWeaponDamageType);IF(IsSpell() and (HasStringInSpellRoll('Attack') or (HasStringInSpellRoll('Check') and HasSpellFlag(SpellFlags.Attack))) and not IsMiss()):ExecuteWeaponFunctors(MainHand);IF(IsSpell() and (HasStringInSpellRoll('Attack') or (HasStringInSpellRoll('Check') and HasSpellFlag(SpellFlags.Attack)))):ApplyStatus(SELF,MAP_PENALTY_3RD,100,1);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h96eb8d1dgb9f7g92cag5182g75b50698778a" version="2" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BoomingBlade" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_FlameBlade" />
         <field name="EnabledConditions" type="StringTableFieldDefinition" value="not HasStatus('Spellstrike_Discharged') and CanUseWeaponActions();" />
         <field name="EnabledContext" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved;OnStatusApplied;OnEquip" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="ToggleGroup" type="StringTableFieldDefinition" value="Spellstrike" />
@@ -41,7 +41,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="SpellstrikeOld" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9c600dd9g677bg6663gbc29gb01f9248683c" version="1" />
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:2" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BoomingBlade" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_FlameBlade" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_Spellstrike);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h815f9196g6099g7724g4799gd767b31c9b87" version="1" />
       </fields>
@@ -52,7 +52,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ArcaneCascade" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc297e550g3116gd3e5gb748g0ce086eabfae" version="1" />
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_ShadowBlade" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_BelmsBonusAttack" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_ArcaneCascade);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="heee8a60cg9cedgb88ag9d1dg7eaffd82b7b1" version="1" />
       </fields>
@@ -74,7 +74,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ArcaneCascade_LaughingShadow" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3bea4e74g8835gce5bgd0f8gf12b347f5ea6" version="1" />
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_ShadowBlade" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_BelmsBonusAttack" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_ArcaneCascadeLS);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc5cd1fa2g2898gb541gc6b0gf4ab57ffeded" version="1" />
       </fields>
@@ -85,7 +85,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ArcaneCascade_InexorableIron" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha81b8fe3g95afg3081gaed2gdeba33afbcb1" version="1" />
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_ShadowBlade" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_BelmsBonusAttack" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_ArcaneCascadeII);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6397e118gcab9ga0aegd1b3g3c4f214f1473" version="1" />
       </fields>
@@ -96,7 +96,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ArcaneCascade_SparklingTarge" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3fb7f1b4g2c67g6e96g18e0g881a86e942ed" version="1" />
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_ShadowBlade" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_BelmsBonusAttack" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_ArcaneCascadeST);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h77294a83g2b48gf05ag170fg86f13de6d923" version="1" />
       </fields>
@@ -108,7 +108,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h67433c95g7135g79a6g3dc6g6c366d82c4a1" version="1" />
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;KiPoint:1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h03cf8001g0944ga6d7gb6b1ge62dd26a5ed4" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_LightningArrow" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_CurvingShot" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Projectile_ShootingStar);ActionResource(KiPoint,1,0);" />
       </fields>
     </stat_object>
@@ -119,7 +119,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h80a69a33g4631ga76cg9c56g17a279d21d8a" version="1" />
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;KiPoint:1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h360a8a8dga72ege29ag717fgebb9710ca357" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_Invisibility" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Blink_Teleport" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_DimensionalAssault);ActionResource(KiPoint,1,0);" />
       </fields>
     </stat_object>
@@ -141,7 +141,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h13c8c3f4g9dbag1558g7201g594fd0750853" version="1" />
         <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;KiPoint:1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5f8f903cgec3dg77acg339eg52881505a8b4" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Thunderwave" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_ThunderousSmite" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Zone_ThunderousStrike);ActionResource(KiPoint,1,0);" />
       </fields>
     </stat_object>
@@ -150,7 +150,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="3ee949b4-2894-476f-bd62-881657528fcd" />
         <field name="Name" type="NameTableFieldDefinition" value="SpellStrikeCleanup" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf50e1f70g92c0g04e5g56b5g246ea2441665" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BoomingBlade" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_FlameBlade" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_MagusCleanup);" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hff886811g11c2g6a29g611cg130ba39c959e" version="1" />
       </fields>

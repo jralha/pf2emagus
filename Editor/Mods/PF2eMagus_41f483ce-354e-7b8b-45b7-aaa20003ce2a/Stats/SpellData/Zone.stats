@@ -23,7 +23,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SELF,Spellstrike_Discharged);ApplyStatus(SELF,ThunderousStrikeHitStatus,100,1);" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Constitution, SourceSpellDC())" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Enemy()" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Thunderwave" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_ThunderousSmite" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Constitution" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(PRONE,100,1)" />
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="66388a6f-44dd-4c9f-a9e7-910c50e70755" />
@@ -39,27 +39,11 @@
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="3ff87abf-1ea1-4c32-aadf-c822d74c7dc0,,;,,;5e7e63e1-0e69-46e7-ade7-fe3dadcc9184,,;e9ad50df-e7f1-43a0-b782-4c08f92b0f5a,,;d8925ce4-d6d9-400c-92f5-ad772ef7f178,,;,,;eadedcce-d01b-4fbb-a1ae-d218f13aa5d6,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;AddFallDamageOnLand;IsHarmful;HasVerbalComponent" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="2af907e1-127c-4c83-a117-af18f211c59d" />
-        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="9c6f07ae-dd92-4e02-aa30-730644cd0d1d" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="20bc86ba-edd8-4fd0-8ff1-7be2c57d1fdf" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="ce3ad918-3c58-49e7-88c9-ed09f9efd394" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="154802bd-3dae-4bdc-9889-4addfdc0ca57" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Thunder" enumeration_type_name="Damage Type" version="1" />
         <field name="Level" type="IntegerTableFieldDefinition" value="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="ab7c4a6b-f65c-4cb6-970a-91211db58010" />
-        <field name="Name" type="NameTableFieldDefinition" value="CryOfDestructionBKP" />
-        <field name="Using" type="BaseClassTableFieldDefinition" value="7d7a53bc-59ac-4fcb-99aa-744d5ded3b49" />
-        <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not SaveCrit()):DealDamage(LevelMapValue(H1D8),Thunder,Magical);IF(SaveCrit()):DealDamage((LevelMapValue(H1D8))*2,Thunder,Magical);IF(SaveCrit()):ApplyStatus(CriticalFailureDisplay,100,0);" />
-        <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not SaveCritMiss()):DealDamage((LevelMapValue(H1D8))/2,Thunder,Magical);" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(H1D8),Thunder)" />
-        <field name="Shape" type="StringTableFieldDefinition" value="Cone" />
-        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:2;KiPoint:1" />
-        <field name="SurfaceGrowInterval" type="IntegerTableFieldDefinition" value="5" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h61c82f2eg21ecg7f89g7011gb143f2295523" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hcf1f7baag6ebeg368ag81e9ge6d09df9b690" version="1" />
-        <field name="Angle" type="IntegerTableFieldDefinition" value="60" />
       </fields>
     </stat_object>
   </stat_objects>

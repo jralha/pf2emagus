@@ -38,7 +38,3 @@ for subdir in "${SUBDIR_LIST[@]}"; do
 	mkdir -p $subdir;
 	cp -a "$SRC_ABS_PATH" "$subdir";
 done;
-
-git add --all
-git commit -m "Backup at `date`"
-git push

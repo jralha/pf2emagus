@@ -101,8 +101,8 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;IsSpell;HasVerbalComponent" enumeration_type_name="SpellFlagList" version="1" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalDamage_Internal" enumeration_type_name="HitAnimationType" version="1" />
         <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
-        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="13fd2ef9-25e3-4e61-91bb-62b62fc481df" />
-        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="14e8690f-d8a4-44ac-a8ba-197eb000acbf" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="01473afa-3d50-4f81-bdc7-a1692536dade" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="62f27967-62ff-4bc6-bb40-f930c24e35bc" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="0f5b0d5e-b5ad-4ca1-8574-ec84dbae2913" />
         <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellSoundMagnitude" version="1" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
@@ -121,7 +121,7 @@
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="CanUseWeaponActions();HasStatus('ThunderousStrikeHitStatus');" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeWeaponAttack);" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon);ExecuteWeaponFunctors(MainHand);" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_Thunderwave" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_ThunderousSmite" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha881018dgc07fg2b1agebaegb44bf618e2df" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha61f1b5cg28c9gcfc3g62adg1e904aaca421" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType); " />
@@ -142,7 +142,7 @@
         <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="13fd2ef9-25e3-4e61-91bb-62b62fc481df" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="14e8690f-d8a4-44ac-a8ba-197eb000acbf" />
-        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="0f5b0d5e-b5ad-4ca1-8574-ec84dbae2913" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="288e0f80-7d7c-4f36-b748-17182318180e" />
         <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellSoundMagnitude" version="1" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
         <field name="FollowUpOriginalSpell" type="StringTableFieldDefinition" value="Zone_ThunderousStrike" />
@@ -152,10 +152,13 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="50daa5c9-8cdd-4684-9791-dd38ee70ff2c" />
         <field name="Name" type="NameTableFieldDefinition" value="DimensionalAssaultHit" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_Invisibility" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Blink_Teleport" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb57b785dgce7cg4ee9g91d6g7dd8484c3a6a" version="1" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="fc4bcb64-c6db-473c-a802-8253192c4fe4" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalDamage_Psychic" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="5db8c579-2840-4ece-9829-e356c5ab607d" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="16442173-97c5-424f-905b-b88d8b425e81" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="5164d339-37aa-475c-bb12-368c1e6acd58" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -165,7 +168,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:TeleportSource();RemoveStatus(SELF,Spellstrike_Discharged);IF(HasPassive('DimensionalDisappearance',context.Source)):ApplyStatus(SELF,INVISIBILITY,100,1);ApplyStatus(SELF,DimensionalAssaultHitStatus,100,1);" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self();" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Illusion_Invisibility" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Blink_Teleport" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5890e600g89e1g2657g8561g305b9c4e9e21" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he3b44623gb926g44dbg9facgb6c77fb437ac" version="1" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Utility_MistyStep_L1to3" />
@@ -177,7 +180,7 @@
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsSpell;HasHighGroundRangeExtension;RangeIgnoreVerticalThreshold;IsHarmful;HasVerbalComponent" enumeration_type_name="SpellFlagList" version="1" />
         <field name="LineOfSightFlags" type="EnumerationListTableFieldDefinition" value="AddSourceHeight" enumeration_type_name="LineOfSightFlags" version="1" />
-        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="7121a488-7c9a-4ba1-a585-f79aaa77e97c" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="021af240-4560-4231-b4e9-d931327ba96a" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="71859b27-bdda-44c3-8c65-7f142a1a2f60" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="ConditionResult(true);" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />

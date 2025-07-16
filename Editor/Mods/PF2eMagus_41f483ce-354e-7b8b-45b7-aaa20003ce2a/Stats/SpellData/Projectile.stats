@@ -89,7 +89,7 @@
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
         <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
         <field name="Trajectories" type="StringTableFieldDefinition" value="61cecd47-317e-406e-ad3c-1eb5ecfbc317,b5984f66-22fc-aa2c-5e71-9456ef207db0" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_PiercingShot" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_CurvingShot" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h718cf908ge14eged12g7736g3755c57cac67" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8df1b6dfg2557g5d8dgd92ag3e71641be4da" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainRangedWeapon-DexterityModifier, MainRangedWeaponDamageType)" />
@@ -98,7 +98,7 @@
         <field name="AlternativeCastTextEvents" type="StringTableFieldDefinition" value="CastOffhand" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;KiPoint:1" />
-        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="73afb4e5-8cfe-4479-95cf-16889597fee3,,;7e67bfd0-2fc2-4d10-bed5-cfda9e660de5,,;eb054308-7fce-4b85-bf4c-7a0031fda7ac,,;0b0dc35b-4953-45c0-a9eb-8d3fef5e798a,,;6ec808e1-e128-44ef-9361-a713bf86de8f,,;b2e9c771-3497-444c-b360-23b4441985a1,,;f920a0a6-f257-4ce4-8d17-2dcaa7bb7bbb,,;,,;,," />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="96760664-e1cc-42e2-a2ab-01be2a4894ed,,;,,;8b5ee54a-b63e-4e5b-8949-a427c38ccc96,,;014e7952-7088-43fa-9124-f74452f5e065,,;c9409594-8480-4ae8-886e-9c50197db5ac,,;b2e9c771-3497-444c-b360-23b4441985a1,,;f920a0a6-f257-4ce4-8d17-2dcaa7bb7bbb,,;,,;,," />
         <field name="DualWieldingSpellAnimation" type="CastAnimationsTableFieldDefinition" value="73afb4e5-8cfe-4479-95cf-16889597fee3,,;7e67bfd0-2fc2-4d10-bed5-cfda9e660de5,,;eb054308-7fce-4b85-bf4c-7a0031fda7ac,,:4a789a60-04b8-4a26-b476-65cf26ca558b,,;a11b8bcb-ba24-417a-aa86-4e4379c41ee2,,;6ec808e1-e128-44ef-9361-a713bf86de8f,,;b2e9c771-3497-444c-b360-23b4441985a1,,;f920a0a6-f257-4ce4-8d17-2dcaa7bb7bbb,,;,,;,," />
         <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
         <field name="WeaponType" type="EnumerationListTableFieldDefinition" value="Ammunition" enumeration_type_name="WeaponFlags" version="1" />
@@ -106,8 +106,8 @@
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalDamage_External" enumeration_type_name="HitAnimationType" version="1" />
         <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="CanUseWeaponActions();" />
-        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="cb7f062b-0a9f-423a-945c-64de24a9301b" />
-        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="732c29ee-1083-44b1-8974-4e8973a1b51c" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="f93fdc8c-d5cf-42d6-a88d-de41c644e5f5" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="ef29bc8a-a6c8-4f05-9995-023694ddd161" />
         <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="SpellSoundMagnitude" version="1" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Ranged" enumeration_type_name="SpellSheathing" version="1" />
         <field name="Level" type="IntegerTableFieldDefinition" value="1" />
