@@ -26,6 +26,7 @@
                     <attribute id="SpellList" type="guid" value="beb9389e-24f8-49b0-86a5-e8d08b6fdc2e"/>
                     <attribute id="SubclassTitle" type="TranslatedString" handle="h1b07bb91ge94aga717g6fa5g755ac53bc174" version="1"/>
                     <attribute id="UUID" type="guid" value="90ef3684-c58c-45f9-beb9-7be6f217dbb7"/>
+                    <attribute id="ValidSomaticEquipmentList" type="LSString" value="Battleaxe;Club;Dagger;Dart;Flail;Glaive;Greataxe;Halberd;Handaxe;HandCrossbow;HeavyCrossbow;Javelin;LightCrossbow;LightHammer;Longbow;Longsword;Mace;Maul;Morningstar;Pike;Quarterstaff;MagicStaff;Rapier;Scimitar;Shortbow;Shortsword;Sickle;Sling;Spear;Trident;Warhammer;WarPick"/>
                     <children>
                         <node id="Tags">
                             <attribute id="Object" type="guid" value="6fe3ae27-dc6c-4fc9-9245-710c790c396c"/>

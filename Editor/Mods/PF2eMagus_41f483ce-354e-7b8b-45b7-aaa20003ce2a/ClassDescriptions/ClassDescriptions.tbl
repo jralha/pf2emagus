@@ -26,6 +26,7 @@
         <field name="ItemsHotbarColumns" type="IntegerTableFieldDefinition" value="2" />
         <field name="MulticlassSpellcasterModifier" type="FloatTableFieldDefinition" value="1" />
         <field name="SpellList" type="GuidObjectTableFieldDefinition" value="beb9389e-24f8-49b0-86a5-e8d08b6fdc2e" />
+        <field name="ValidSomaticEquipmentList" type="StringTableFieldDefinition" value="Battleaxe;Club;Dagger;Dart;Flail;Glaive;Greataxe;Halberd;Handaxe;HandCrossbow;HeavyCrossbow;Javelin;LightCrossbow;LightHammer;Longbow;Longsword;Mace;Maul;Morningstar;Pike;Quarterstaff;MagicStaff;Rapier;Scimitar;Shortbow;Shortsword;Sickle;Sling;Spear;Trident;Warhammer;WarPick" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
