@@ -112,7 +112,7 @@
                     <attribute id="FileSize" type="uint64" value="1677666"/>
                     <attribute id="Folder" type="LSString" value="PF2eMagus_41f483ce-354e-7b8b-45b7-aaa20003ce2a"/>
                     <attribute id="LobbyLevelName" type="FixedString" value=""/>
-                    <attribute id="MD5" type="LSString" value="282444e1c6226078c28234f81f36eea5"/>
+                    <attribute id="MD5" type="LSString" value="2b8e8b51e031bf9544231744618536b7"/>
                     <attribute id="MenuLevelName" type="FixedString" value=""/>
                     <attribute id="Name" type="LSString" value="PF2eMagus"/>
                     <attribute id="NumPlayers" type="uint8" value="4"/>
@@ -120,7 +120,7 @@
                     <attribute id="PublishHandle" type="uint64" value="5091691"/>
                     <attribute id="StartupLevelName" type="FixedString" value=""/>
                     <attribute id="UUID" type="FixedString" value="41f483ce-354e-7b8b-45b7-aaa20003ce2a"/>
-                    <attribute id="Version64" type="int64" value="36028797018963992"/>
+                    <attribute id="Version64" type="int64" value="36028797018963998"/>
                     <children>
                         <node id="PublishVersion">
                             <attribute id="Version64" type="int64" value="144255927718543409"/>

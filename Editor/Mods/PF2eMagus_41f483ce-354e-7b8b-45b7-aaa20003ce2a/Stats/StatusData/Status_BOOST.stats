@@ -26,7 +26,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="5d584ace-ce3e-46f7-97f9-879490f221ac" />
         <field name="Name" type="NameTableFieldDefinition" value="ARCANE_CASCADE_LS" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h378f79afg86f9g8df9gb362g462322502ca7" version="2" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7d9937d7g8250g2295gbd34g2a579b9a3674" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7d9937d7g8250g2295gbd34g2a579b9a3674" version="3" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_BelmsBonusAttack" />
         <field name="StackId" type="StringTableFieldDefinition" value="STANCE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsWeaponAttack() and IsMeleeAttack()):DamageBonus(2,Force);ActionResource(Movement, 1.5, 0);IF((IsWeaponAttack() and IsMeleeAttack()) and (OffGuard() or HasAllyWithinRange('SG_Incapacitated',1.5)) and (IsOffHandSlotEmpty() and not (HasShieldEquipped() or WieldingWeapon('Twohanded', false, false)))):DamageBonus(3,Force);" />
@@ -70,90 +70,6 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfb7cc774gaf55ga10cg7facg65a3054ba7ab" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h53ad0b3cg3b34g79b6gc9d9gca1b25dad7d8" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_FlameBlade" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="4c5d24e2-1e8d-4a0b-a508-cca9a96f7e29" />
-        <field name="Name" type="NameTableFieldDefinition" value="Spellstrike_Crit" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9dde7888g8212g761fgf165gff4ad8ea8276" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdaaff4cbge01ag682dg4c7bg91fe591d1537" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_FlameBlade" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Spellstrike_Crit);CriticalHit(AttackRoll,Success,Always);RollBonus(MeleeSpellAttack,10);RollBonus(RangedSpellAttack, 10);" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded;OnSpellCast;OnAttack;OnMove" enumeration_type_name="StatusEvent" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="6ea8c1f7-39f1-4f26-9eab-009ecd0995b5" />
-        <field name="Name" type="NameTableFieldDefinition" value="Spellstrike_Hit" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3f0d16c9g1d14g47aeg1cefgf4cd5b2ff5b4" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he63c1544g4700g7c77gd225ga55e7e8d40e5" version="2" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_FlameBlade" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Spellstrike_Hit);CriticalHit(AttackRoll,Success,Never);RollBonus(MeleeSpellAttack,10);RollBonus(RangedSpellAttack, 10);" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded;OnSpellCast;OnAttack;OnMove" enumeration_type_name="StatusEvent" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="c4064016-3e18-4fd1-a38c-51e17322b386" />
-        <field name="Name" type="NameTableFieldDefinition" value="Spellstrike_Miss" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6f0e4d5bg08ddge893g4ccegd685d25de85e" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h605c4816ge25fg4f3ag0630gf9fdce9933e0" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_FlameBlade" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Spellstrike_Miss);CriticalHit(AttackRoll,Success,Never);" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded;OnSpellCast;OnAttack;OnMove" enumeration_type_name="StatusEvent" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="e0d58b93-5501-4e42-9cf1-9460e7551777" />
-        <field name="Name" type="NameTableFieldDefinition" value="Spellstrike_FreeAttackSpell" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3e4e119fg5d05ga26cgf7cdg8eaa7ff00358" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc6e363d9g690agbb7bg2017g6e3f20946f46" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_FlameBlade" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(IsSpell() and (HasStringInSpellRoll('Attack') or (HasStringInSpellRoll('Check') and HasSpellFlag(SpellFlags.Attack))),ModifyUseCosts(Replace,ActionPoint,0,0,ActionPoint),ModifyIconGlow(),ModifyTargetRadius(Override,2),ModifyNumberOfTargets(Override,1));" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded;OnSpellCast;OnAttack;OnMove" enumeration_type_name="StatusEvent" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="375b863a-4ef0-414e-848d-a1d73658a97a" />
-        <field name="Name" type="NameTableFieldDefinition" value="Spellstrike_FreeSpell" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5dfc3b05gf537g535fg065cg46dcce546079" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="haf5ec86eg9d3fgb4ceg2781g420d6d0e4c08" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_FlameBlade" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(IsSpell(),ModifyUseCosts(Replace,ActionPoint,0,0,ActionPoint),ModifyIconGlow(),ModifyTargetRadius(Override,2));" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded;OnSpellCast;OnAttack;OnMove" enumeration_type_name="StatusEvent" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="97fd5dc7-948e-47b9-b8df-847146679b8a" />
-        <field name="Name" type="NameTableFieldDefinition" value="RangedSpellstrike_FreeAttackSpell" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5327dd0fg30fag3746g128dg51310035dc92" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb6c879a4gf42bg464dg3d83gb6b6ca051557" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_LightningArrow" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(IsSpell() and (HasStringInSpellRoll('Attack') or (HasStringInSpellRoll('Check') and HasSpellFlag(SpellFlags.Attack))),ModifyUseCosts(Replace,ActionPoint,0,0,ActionPoint),ModifyIconGlow(),ModifyTargetRadius(Override,36),ModifyNumberOfTargets(Override,1));" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
-        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="3077757e-e32c-424c-b53a-453d60f2f8a0" />
-        <field name="Name" type="NameTableFieldDefinition" value="RangedSpellstrike_FreeSpell" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8f3492b0gb3e0g5d28gfa42g5a8682eb5765" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2ef90d6cg41c2g1962g55ceg5461ede3ace0" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_LightningArrow" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(IsSpell(),ModifyUseCosts(Replace,ActionPoint,0,0,ActionPoint),ModifyIconGlow(),ModifyTargetRadius(Override,36));" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not Combat()" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
       </fields>
@@ -237,6 +153,202 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_LightningArrow" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Ranged" enumeration_type_name="StatusSheathing" version="1" />
         <field name="DynamicAnimationTag" type="GuidObjectTableFieldDefinition" value="1be5aa5a-e221-4f0e-a1bf-be25f5d23224" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FFA52A2A" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5a5977b3-7e16-482f-886d-763cdc5e7c1d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Misc" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="42f2489d-2d5f-498b-b3e6-d5483fe7cf8c" />
+        <field name="Name" type="NameTableFieldDefinition" value="StratagemTarget" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h819fca26g24a3g0562g024bge3a43ad1406f" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc0d9322ag3ac3g69f4gc8cage0a228cf2bf9" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Portent" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2ea65143-4101-438d-8735-bc66c5e96fa4" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h841190d1g6ebcg5ff8g1f3ag7b0120bbc0d2" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8503ac39gaa97ga47fgcf7dgc99ed403b76d" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Portent" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Devise1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="34a4bd8f-eea3-44ec-8666-b50c616498be" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2ea65143-4101-438d-8735-bc66c5e96fa4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd62ad386g081eg7f1dgba46ga1df0052d2ad" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Devise2);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8a5388a2-1b08-4399-bd09-b38ebc6020c5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2ea65143-4101-438d-8735-bc66c5e96fa4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h33b55819g59a4gf9e3g1ccege9cabc526862" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Devise3);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8400f92e-0e34-48f9-ab21-627b49420fe3" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2ea65143-4101-438d-8735-bc66c5e96fa4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h75c2d827gda34ge4bfgca27g4dab4dc374e9" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Devise4);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f4314708-6bba-4adb-bfcf-3648658f356d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2ea65143-4101-438d-8735-bc66c5e96fa4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h46aa59edg2a62gc203gfbf1g0204609be2d1" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Devise5);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="690f4e6f-db72-4dbf-9749-b0ac6ed21ab4" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2ea65143-4101-438d-8735-bc66c5e96fa4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h43e52a91g8aa1g8969gb994gb3c1d970178e" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Devise6);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="179f72a2-21f2-45bd-8e28-fdb5e30277ce" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise7" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2ea65143-4101-438d-8735-bc66c5e96fa4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc3b762bag2269g553bga1a0gda21f9cf7d7c" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Devise7);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="632cc100-aeb3-4ae9-a56c-db3f81486332" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise8" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2ea65143-4101-438d-8735-bc66c5e96fa4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h615d9c30gc07fg42a7gcafbg90d6fbefaa03" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Devise8);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e0630dcb-20bf-4d6e-81bd-2a166eff325a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise9" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2ea65143-4101-438d-8735-bc66c5e96fa4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h26e31a66gcc78gc2e5g051agd5562f233cb5" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Devise9);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b1813526-5e4c-4058-afeb-1fe6e11e38ca" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2ea65143-4101-438d-8735-bc66c5e96fa4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2edbafdcgcaf9g5b51ge40dg87bbb028dfab" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Devise10);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1eec1974-9ab1-4e31-b821-bf046210929b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise11" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2ea65143-4101-438d-8735-bc66c5e96fa4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5c071ce9g20e6gc9e7gda1fg671185723cc0" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Devise11);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2f4cc5ea-3d16-47a8-8048-94de3096a4a6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise12" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2ea65143-4101-438d-8735-bc66c5e96fa4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4dbc7d0bge732g9cf3g3c64gd013cbf0d351" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Devise12);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1f8e8c0e-baa5-4427-b618-b4b748a79877" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise13" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2ea65143-4101-438d-8735-bc66c5e96fa4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h02199e10g2109g88a9gea88gc0cacb55ecfa" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Devise13);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="156869d1-1a52-4099-a016-5c29218e7a3f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise14" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2ea65143-4101-438d-8735-bc66c5e96fa4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2decbbb9g3f60g9938ga6f0g4b7ab7196218" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Devise14);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c92a34b7-439e-4ecd-b4d2-1a0d6c96cb7d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise15" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2ea65143-4101-438d-8735-bc66c5e96fa4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h34e9f581ga3b5gbce1gc5adgea49538ea048" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Devise15);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b3f0f769-ddb9-482d-96b1-31cf9d891b22" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise16" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2ea65143-4101-438d-8735-bc66c5e96fa4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb93237cfg9fbeg0a02g2baag7ca435b90004" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Devise16);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2dbf836a-db24-494a-b745-75be34931663" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise17" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2ea65143-4101-438d-8735-bc66c5e96fa4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf6774a80ga73bg4af8gc990g2284c420ee5a" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Devise17);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="18661ec3-b8ff-4dc9-81dd-dc8769a0edee" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise18" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2ea65143-4101-438d-8735-bc66c5e96fa4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7dc6174cg9823gf121g7614g9b2f7111e6a5" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Devise18);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ad37b4ed-4453-47b9-9399-1dcfca058b4a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise19" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2ea65143-4101-438d-8735-bc66c5e96fa4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha10150a3g0341g7a6dg30aag9307796af293" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Devise19);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3c5679ee-48ee-4dcd-bc5c-4d84c42ad4aa" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise20" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="2ea65143-4101-438d-8735-bc66c5e96fa4" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0e687076gd0fag5fb5g6f49g76b79f760a7d" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_Devise20);" />
       </fields>
     </stat_object>
   </stat_objects>

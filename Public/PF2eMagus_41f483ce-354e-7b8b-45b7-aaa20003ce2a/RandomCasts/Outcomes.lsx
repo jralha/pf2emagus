@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="200"/>
+    <region id="Outcomes">
+        <node id="root">
+            <children>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DeviseStratagem"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_Devise_Stratagem_1"/>
+                    <attribute id="UUID" type="guid" value="3338acd1-9e40-46c1-82f0-b60164f9ab97"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DeviseStratagem"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_Devise_Stratagem_2"/>
+                    <attribute id="UUID" type="guid" value="6e019a25-8998-4b0c-921d-ac3640c9cb79"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DeviseStratagem"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_Devise_Stratagem_3"/>
+                    <attribute id="UUID" type="guid" value="1b4e2145-374e-43aa-abcb-ae58bb24e8e2"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DeviseStratagem"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_Devise_Stratagem_4"/>
+                    <attribute id="UUID" type="guid" value="25c74026-3bb3-4db0-9388-331b2881ec43"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DeviseStratagem"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_Devise_Stratagem_5"/>
+                    <attribute id="UUID" type="guid" value="7753a943-d759-4255-8359-4631f9c1ea68"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DeviseStratagem"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_Devise_Stratagem_6"/>
+                    <attribute id="UUID" type="guid" value="3cdaf501-037c-49e5-896f-fe3a48e6c752"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DeviseStratagem"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_Devise_Stratagem_7"/>
+                    <attribute id="UUID" type="guid" value="04f35a3a-1941-4c49-90b1-45aa1d34f25a"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DeviseStratagem"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_Devise_Stratagem_8"/>
+                    <attribute id="UUID" type="guid" value="3699162a-02f2-4b63-85f3-e02a0490cacb"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DeviseStratagem"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_Devise_Stratagem_9"/>
+                    <attribute id="UUID" type="guid" value="d66230d8-f3ea-43dc-873c-47ceff1a85a5"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DeviseStratagem"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_Devise_Stratagem_10"/>
+                    <attribute id="UUID" type="guid" value="68b63d27-a166-4599-b700-c7307bdf821c"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DeviseStratagem"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_Devise_Stratagem_11"/>
+                    <attribute id="UUID" type="guid" value="ad31caf2-b14c-496f-832b-1e4c38ad54f2"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DeviseStratagem"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_Devise_Stratagem_12"/>
+                    <attribute id="UUID" type="guid" value="4315fdce-f2de-4b46-91e8-72558a9a6c3d"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DeviseStratagem"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_Devise_Stratagem_13"/>
+                    <attribute id="UUID" type="guid" value="669c4009-9a2b-42a5-adb9-581fdb05dcbb"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DeviseStratagem"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_Devise_Stratagem_14"/>
+                    <attribute id="UUID" type="guid" value="63d3d4b9-3243-4590-b03a-6d2caeb739db"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DeviseStratagem"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_Devise_Stratagem_15"/>
+                    <attribute id="UUID" type="guid" value="5774904a-3045-4281-8e27-1b03a4272e9b"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DeviseStratagem"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_Devise_Stratagem_16"/>
+                    <attribute id="UUID" type="guid" value="cf7fa199-34ed-4f20-b5eb-8e189d896cdc"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DeviseStratagem"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_Devise_Stratagem_17"/>
+                    <attribute id="UUID" type="guid" value="77993bbd-57ff-4de9-807f-9472c9e2fb70"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DeviseStratagem"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_Devise_Stratagem_18"/>
+                    <attribute id="UUID" type="guid" value="7b8eca76-39a7-463a-bd4c-6ae9ac128cd3"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DeviseStratagem"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_Devise_Stratagem_19"/>
+                    <attribute id="UUID" type="guid" value="b569a778-17b9-46d0-b6f4-8eac4d5ee5d3"/>
+                </node>
+                <node id="Outcome">
+                    <attribute id="GroupName" type="FixedString" value="DeviseStratagem"/>
+                    <attribute id="Spell" type="FixedString" value="Shout_Devise_Stratagem_20"/>
+                    <attribute id="UUID" type="guid" value="cd75ba06-14ae-42e9-bf3a-1bcf9e87719d"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

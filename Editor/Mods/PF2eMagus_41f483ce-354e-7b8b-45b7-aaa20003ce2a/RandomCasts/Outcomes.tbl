@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="cae7d663-416d-40ed-8639-8ed799afbae3">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="UUID" type="IdTableFieldDefinition" value="3338acd1-9e40-46c1-82f0-b60164f9ab97" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="DeviseStratagem" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_Devise_Stratagem_1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="6e019a25-8998-4b0c-921d-ac3640c9cb79" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="DeviseStratagem" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_Devise_Stratagem_2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_2" />
+        <field name="UUID" type="IdTableFieldDefinition" value="1b4e2145-374e-43aa-abcb-ae58bb24e8e2" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="DeviseStratagem" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_Devise_Stratagem_3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_3" />
+        <field name="UUID" type="IdTableFieldDefinition" value="25c74026-3bb3-4db0-9388-331b2881ec43" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="DeviseStratagem" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_Devise_Stratagem_4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_4" />
+        <field name="UUID" type="IdTableFieldDefinition" value="7753a943-d759-4255-8359-4631f9c1ea68" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="DeviseStratagem" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_Devise_Stratagem_5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_5" />
+        <field name="UUID" type="IdTableFieldDefinition" value="3cdaf501-037c-49e5-896f-fe3a48e6c752" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="DeviseStratagem" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_Devise_Stratagem_6" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_6" />
+        <field name="UUID" type="IdTableFieldDefinition" value="04f35a3a-1941-4c49-90b1-45aa1d34f25a" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="DeviseStratagem" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_Devise_Stratagem_7" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_7" />
+        <field name="UUID" type="IdTableFieldDefinition" value="3699162a-02f2-4b63-85f3-e02a0490cacb" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="DeviseStratagem" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_Devise_Stratagem_8" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_8" />
+        <field name="UUID" type="IdTableFieldDefinition" value="d66230d8-f3ea-43dc-873c-47ceff1a85a5" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="DeviseStratagem" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_Devise_Stratagem_9" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_9" />
+        <field name="UUID" type="IdTableFieldDefinition" value="68b63d27-a166-4599-b700-c7307bdf821c" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="DeviseStratagem" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_Devise_Stratagem_10" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_10" />
+        <field name="UUID" type="IdTableFieldDefinition" value="ad31caf2-b14c-496f-832b-1e4c38ad54f2" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="DeviseStratagem" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_Devise_Stratagem_11" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_11" />
+        <field name="UUID" type="IdTableFieldDefinition" value="4315fdce-f2de-4b46-91e8-72558a9a6c3d" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="DeviseStratagem" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_Devise_Stratagem_12" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_12" />
+        <field name="UUID" type="IdTableFieldDefinition" value="669c4009-9a2b-42a5-adb9-581fdb05dcbb" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="DeviseStratagem" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_Devise_Stratagem_13" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_13" />
+        <field name="UUID" type="IdTableFieldDefinition" value="63d3d4b9-3243-4590-b03a-6d2caeb739db" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="DeviseStratagem" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_Devise_Stratagem_14" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_14" />
+        <field name="UUID" type="IdTableFieldDefinition" value="5774904a-3045-4281-8e27-1b03a4272e9b" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="DeviseStratagem" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_Devise_Stratagem_15" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_15" />
+        <field name="UUID" type="IdTableFieldDefinition" value="cf7fa199-34ed-4f20-b5eb-8e189d896cdc" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="DeviseStratagem" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_Devise_Stratagem_16" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_16" />
+        <field name="UUID" type="IdTableFieldDefinition" value="77993bbd-57ff-4de9-807f-9472c9e2fb70" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="DeviseStratagem" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_Devise_Stratagem_17" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_17" />
+        <field name="UUID" type="IdTableFieldDefinition" value="7b8eca76-39a7-463a-bd4c-6ae9ac128cd3" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="DeviseStratagem" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_Devise_Stratagem_18" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_18" />
+        <field name="UUID" type="IdTableFieldDefinition" value="b569a778-17b9-46d0-b6f4-8eac4d5ee5d3" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="DeviseStratagem" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_Devise_Stratagem_19" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_19" />
+        <field name="UUID" type="IdTableFieldDefinition" value="cd75ba06-14ae-42e9-bf3a-1bcf9e87719d" />
+        <field name="GroupName" type="FixedStringTableFieldDefinition" value="DeviseStratagem" />
+        <field name="Spell" type="FixedStringTableFieldDefinition" value="Shout_Devise_Stratagem_20" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

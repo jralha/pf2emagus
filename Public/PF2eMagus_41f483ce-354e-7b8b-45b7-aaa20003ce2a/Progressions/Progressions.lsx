@@ -155,7 +155,7 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="1"/>
                     <attribute id="Name" type="LSString" value="StarlitSpan"/>
-                    <attribute id="PassivesAdded" type="LSString" value="ArcaneCascade;ShootingStar;RangedSpellstrikeToggle"/>
+                    <attribute id="PassivesAdded" type="LSString" value="ArcaneCascade;ShootingStar;RangedSpellstrikeToggle;IsStarlitSpan"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="TableUUID" type="guid" value="abade1ce-8d94-4f18-bf64-fa11f7395c98"/>
                     <attribute id="UUID" type="guid" value="66cd6052-490d-4815-ba79-0d09b3b91717"/>

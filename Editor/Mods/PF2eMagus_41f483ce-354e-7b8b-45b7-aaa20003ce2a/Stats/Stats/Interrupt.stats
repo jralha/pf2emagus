@@ -1,46 +1,198 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <stats stat_object_definition_id="c496009d-a970-44a3-b882-7ed3364dc271">
   <stat_objects>
-    <stat_object is_substat="false">
+    <stat_object color="#FF8B0000" is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="f517f62d-d130-42b9-b50e-ce5fad036bd8" />
-        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Spellstrike_Crit" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6750a576g65dfgac48gd777g07533f403909" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h63c18f56g2952gc884gccd5g2dee6da37d53" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BoomingBlade" />
-        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
-        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
-        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
-        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsSpell()):SetRoll(20);RemoveStatus(OBSERVER_OBSERVER,Spellstrike_Crit);" />
-        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="cace75d2-15d7-488a-94c8-95b6643b05eb" />
+        <field name="Name" type="NameTableFieldDefinition" value="Misc" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="852b2317-5b95-4666-9409-6ecc060d3ec7" />
-        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Spellstrike_Hit" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7d374401gf223g4f16g318cg7ab9a7f0fca5" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdf3e231cgec7cg5b3fg08b0g7520184abafc" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BoomingBlade" />
+        <field name="UUID" type="IdTableFieldDefinition" value="cce9a8ba-3ed4-4f3c-adf4-b8fd81fe3c1f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Devise1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hebeb0c41g35e5g1165g8abcgfc1e21d63c4e" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h11e7c370g5157g526eg81ecgcc2f283b2c5b" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Portent" />
         <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
         <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
         <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
-        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsSpell()):SetRoll(16);RemoveStatus(OBSERVER_OBSERVER,Spellstrike_Hit);" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsWeaponAttack() and HasStatus('StratagemTarget',context.Target);" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetRoll(1);RemoveStatus(OBSERVER_OBSERVER,Devise1);IF(HasInterruptedAttack() and CheckCriticalTen(10)):SetRoll(20);" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
         <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="3f817224-75e5-44ae-bb1a-899033d32a7a" />
-        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Spellstrike_Miss" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h28bbbcaeg17feg79f2gfb8dgc4b859b6cb1c" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1f34f736g2785g4499g9502g41040209006a" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_BoomingBlade" />
-        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnPostRoll" enumeration_type_name="InterruptContext" version="1" />
-        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
-        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
-        <field name="Properties" type="StringTableFieldDefinition" value="IF(IsSpell()):SetRoll(1);RemoveStatus(OBSERVER_OBSERVER,Spellstrike_Miss);" />
-        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="e94b0d19-f482-493d-99df-163170452404" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Devise2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cce9a8ba-3ed4-4f3c-adf4-b8fd81fe3c1f" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h16c395a8g53dag6fffgb44bgc07da3b83069" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetRoll(2);RemoveStatus(OBSERVER_OBSERVER,Devise2);IF(HasInterruptedAttack() and CheckCriticalTen(10)):SetRoll(20);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f9b09e99-e985-4774-9004-f11764979f57" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Devise3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cce9a8ba-3ed4-4f3c-adf4-b8fd81fe3c1f" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3c4144d9gba1dga3b2gde15ga167ff97b98b" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetRoll(3);RemoveStatus(OBSERVER_OBSERVER,Devise3);IF(HasInterruptedAttack() and CheckCriticalTen(10)):SetRoll(20);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6e8ce5e7-88ac-4c88-8de1-2235d03b5a3c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Devise4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cce9a8ba-3ed4-4f3c-adf4-b8fd81fe3c1f" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h67e496a4g6220ga3c2gea67gcd6233f7447d" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetRoll(4);RemoveStatus(OBSERVER_OBSERVER,Devise4);IF(HasInterruptedAttack() and CheckCriticalTen(10)):SetRoll(20);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d951db6a-f42a-40ce-a8c8-32493791b63d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Devise5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cce9a8ba-3ed4-4f3c-adf4-b8fd81fe3c1f" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hafc47f04g2497g7bddgf5cfgf1a4e3276b4d" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetRoll(5);RemoveStatus(OBSERVER_OBSERVER,Devise5);IF(HasInterruptedAttack() and CheckCriticalTen(10)):SetRoll(20);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b56de6c2-c3d0-47a9-b678-06c28cb45a1c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Devise6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cce9a8ba-3ed4-4f3c-adf4-b8fd81fe3c1f" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hecaa499fg4cc8g5297g3863g50ca4ee9b9e8" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetRoll(6);RemoveStatus(OBSERVER_OBSERVER,Devise6);IF(HasInterruptedAttack() and CheckCriticalTen(10)):SetRoll(20);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="174430f5-0475-4427-b61c-d679f61ca7a7" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Devise7" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cce9a8ba-3ed4-4f3c-adf4-b8fd81fe3c1f" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd956880bgc985g3951gf14cg86b41f69942c" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetRoll(7);RemoveStatus(OBSERVER_OBSERVER,Devise7);IF(HasInterruptedAttack() and CheckCriticalTen(10)):SetRoll(20);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="97f6ac08-efb2-4c40-a063-dca7bfc0bb4d" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Devise8" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cce9a8ba-3ed4-4f3c-adf4-b8fd81fe3c1f" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2c804aa5g4e22g56b0g5cbdgc9a1455f323e" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetRoll(8);RemoveStatus(OBSERVER_OBSERVER,Devise8);IF(HasInterruptedAttack() and CheckCriticalTen(10)):SetRoll(20);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="847dfa6e-e958-4edb-a86c-c436163d4f1a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Devise9" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cce9a8ba-3ed4-4f3c-adf4-b8fd81fe3c1f" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h67dc2f26gc5adgda2dg6422gdf6fc4cf6300" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetRoll(9);RemoveStatus(OBSERVER_OBSERVER,Devise9);IF(HasInterruptedAttack() and CheckCriticalTen(10)):SetRoll(20);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6763eb8b-27dd-444e-b694-e45b09244718" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Devise10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cce9a8ba-3ed4-4f3c-adf4-b8fd81fe3c1f" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6192d83ag3fb1g65d5g76ebg57081123927e" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetRoll(10);RemoveStatus(OBSERVER_OBSERVER,Devise10);IF(HasInterruptedAttack() and CheckCriticalTen(10)):SetRoll(20);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9d2d82ec-fee2-46d1-9990-6e2aa9044014" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Devise11" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cce9a8ba-3ed4-4f3c-adf4-b8fd81fe3c1f" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc305035fgb8e8gd21fgf1c7g5d09e7e2e2cb" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetRoll(11);RemoveStatus(OBSERVER_OBSERVER,Devise11);IF(HasInterruptedAttack() and CheckCriticalTen(10)):SetRoll(20);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4743722d-d398-4916-92f1-452121430b8a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Devise12" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cce9a8ba-3ed4-4f3c-adf4-b8fd81fe3c1f" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he08b8a92g436ag4914ga485g979eef9681c3" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetRoll(12);RemoveStatus(OBSERVER_OBSERVER,Devise12);IF(HasInterruptedAttack() and CheckCriticalTen(10)):SetRoll(20);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6d536795-c239-466c-9f19-a083f396ec20" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Devise13" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cce9a8ba-3ed4-4f3c-adf4-b8fd81fe3c1f" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc8418344g41dfg61b8gcd82ge82e2f4ab09e" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetRoll(13);RemoveStatus(OBSERVER_OBSERVER,Devise13);IF(HasInterruptedAttack() and CheckCriticalTen(10)):SetRoll(20);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b73ca75f-d32e-40b2-9483-616c38b35807" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Devise14" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cce9a8ba-3ed4-4f3c-adf4-b8fd81fe3c1f" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1d7fa95fge9b5ge8d1g3bf0gc23488521039" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetRoll(14);RemoveStatus(OBSERVER_OBSERVER,Devise14);IF(HasInterruptedAttack() and CheckCriticalTen(10)):SetRoll(20);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4971b671-6613-438d-8c00-12a82ba4bf72" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Devise15" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cce9a8ba-3ed4-4f3c-adf4-b8fd81fe3c1f" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0251f38ag79eagdc2eg8dedg1a9296ffae52" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetRoll(15);RemoveStatus(OBSERVER_OBSERVER,Devise15);IF(HasInterruptedAttack() and CheckCriticalTen(10)):SetRoll(20);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8dec531e-aff1-4366-bc1d-647b7125169e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Devise16" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cce9a8ba-3ed4-4f3c-adf4-b8fd81fe3c1f" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbbd1321fgca82gd25ag501dg7d6699b997c3" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetRoll(16);RemoveStatus(OBSERVER_OBSERVER,Devise16);IF(HasInterruptedAttack() and CheckCriticalTen(10)):SetRoll(20);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8bc635e5-d867-46de-9e67-82b48a4766d4" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Devise17" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cce9a8ba-3ed4-4f3c-adf4-b8fd81fe3c1f" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h20c416beg2b92gb796g8a9dg2c71de470a9c" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetRoll(17);RemoveStatus(OBSERVER_OBSERVER,Devise17);IF(HasInterruptedAttack() and CheckCriticalTen(10)):SetRoll(20);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0828228a-5300-4f11-945f-1b5607281a1b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Devise18" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cce9a8ba-3ed4-4f3c-adf4-b8fd81fe3c1f" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0596f1e1gab06g0fdegce8ag3eecbf70d8b6" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetRoll(18);RemoveStatus(OBSERVER_OBSERVER,Devise18);IF(HasInterruptedAttack() and CheckCriticalTen(10)):SetRoll(20);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4e74e4fb-2425-439d-94e4-3b64328c5f97" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Devise19" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cce9a8ba-3ed4-4f3c-adf4-b8fd81fe3c1f" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdbc08f5fgd335gcfbcge923g1b2410a39031" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetRoll(19);RemoveStatus(OBSERVER_OBSERVER,Devise19);IF(HasInterruptedAttack() and CheckCriticalTen(10)):SetRoll(20);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="65e089a7-4557-4852-8fbd-ef84bb1d43b5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_Devise20" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cce9a8ba-3ed4-4f3c-adf4-b8fd81fe3c1f" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hddb181fdgf9a0g952bg1300g0a16f5b549eb" version="1" />
+        <field name="Properties" type="StringTableFieldDefinition" value="SetRoll(20);RemoveStatus(OBSERVER_OBSERVER,Devise20);" />
       </fields>
     </stat_object>
   </stat_objects>

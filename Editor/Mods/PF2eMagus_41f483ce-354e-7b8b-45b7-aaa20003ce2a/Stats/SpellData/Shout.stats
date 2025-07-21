@@ -146,5 +146,204 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf301dc26g7e7bg8b2eg1035g4801fe802b9c" version="1" />
       </fields>
     </stat_object>
+    <stat_object color="#FFDC143C" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2626e34e-7641-42aa-8d1c-75968d61ccdc" />
+        <field name="Name" type="NameTableFieldDefinition" value="Misc" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="50970d64-1b06-48af-b033-cc3832dbf80f" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise_Stratagem_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8f379530-98a2-4a42-ad84-7f8ba81aebad" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(Devise1,100,1);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Portent" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc10b5913gbeeagc75eg6449g77eae7f9cbfc" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he397391fg2b48g6ad6g3a83gf11fb3fb7291" version="2" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Action_Prepare_Wizard_BladeSong" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_PactOfTheBlade" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Steady" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:0;" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;,,;35b644cf-5c13-4407-9dc1-23bf4309216e,,;823e3ddf-c670-41ef-b7b4-9f4a4e38300b,,;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="a334f3bc-65c4-4266-8a21-e10d026958f8" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="b7978c69-a968-44d5-9482-08860fd234c2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="01d9ad6d-14b9-437f-834c-7d1faf081263" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise_Stratagem_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="50970d64-1b06-48af-b033-cc3832dbf80f" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(Devise2,100,1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h607eb554ga83eg531ag68e4g85efc5ef76f1" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="09d96b21-dcd3-4b14-bbb8-1258f96158ea" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise_Stratagem_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="50970d64-1b06-48af-b033-cc3832dbf80f" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(Devise3,100,1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h76bfdf5cgeab1g6980g7e02g108ccc6b7d2e" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="08edd94e-4e33-4496-9e1c-595caec50119" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise_Stratagem_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="50970d64-1b06-48af-b033-cc3832dbf80f" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(Devise4,100,1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h673d5f75g80abga4e3g3936gfa39cdec39f2" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1dd23f13-dd7c-4ebb-82f9-92ef423ebd21" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise_Stratagem_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="50970d64-1b06-48af-b033-cc3832dbf80f" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(Devise5,100,1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6fa8e2aegae9eg5c91ge71egd57ab064d1d9" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5033ee80-dbba-44c8-bdba-99a663213997" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise_Stratagem_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="50970d64-1b06-48af-b033-cc3832dbf80f" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(Devise6,100,1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hac7330d7g5e42gcbd5g8abfg2343bc795ca5" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7826ebcd-b7e7-4501-a473-6fd06ce50a3c" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise_Stratagem_7" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="50970d64-1b06-48af-b033-cc3832dbf80f" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(Devise7,100,1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7d1dd902g16bagcaffg4926g439025ca6229" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3b663e10-4924-47e4-abb8-b0ca36a3c4eb" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise_Stratagem_8" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="50970d64-1b06-48af-b033-cc3832dbf80f" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(Devise8,100,1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he1af1ea0gc72eg870agb48dg292cdbb81a54" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a6e8350a-b829-4eb2-8e07-8e1c56397562" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise_Stratagem_9" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="50970d64-1b06-48af-b033-cc3832dbf80f" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(Devise9,100,1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7c1ce278g8ac0g93dbg698egbca8b72e017b" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="13b85312-b3d6-48f6-bb02-bf5719e022db" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise_Stratagem_10" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="50970d64-1b06-48af-b033-cc3832dbf80f" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(Devise10,100,1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he243524eg1f24g5572gb015gf97d67df15a8" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7afe348c-40c5-4069-8b67-9dd96beb3ebc" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise_Stratagem_11" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="50970d64-1b06-48af-b033-cc3832dbf80f" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(Devise11,100,1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he142cbedgcabfgc4b7g4958gf9ea0c1417ba" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="30fc05f1-0c64-4b8c-a686-005011764932" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise_Stratagem_12" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="50970d64-1b06-48af-b033-cc3832dbf80f" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(Devise12,100,1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb98ec061g99fbg8614g10c0ge01b6bf80d57" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7cb5a7c8-08fb-4d86-9293-94713fcd3b19" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise_Stratagem_13" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="50970d64-1b06-48af-b033-cc3832dbf80f" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(Devise13,100,1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf1acd126ga4dcg94dfgf860gc237d5b6c279" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e45a9549-1b35-4e0e-bda2-36d785e8ee63" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise_Stratagem_14" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="50970d64-1b06-48af-b033-cc3832dbf80f" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(Devise14,100,1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3bd40ed9g49dag63e3g9a96g6711477327e4" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="57fb12c8-d991-452b-98d7-be80a90af9ad" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise_Stratagem_15" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="50970d64-1b06-48af-b033-cc3832dbf80f" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(Devise15,100,1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h164d5d23gab36g1b9cg318eg7fd38b2ed226" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a2253180-259d-414b-87ca-6dab66a66937" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise_Stratagem_16" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="50970d64-1b06-48af-b033-cc3832dbf80f" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(Devise16,100,1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h50e932d6g46b4gb75egd29dgc9372a809484" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="437cf067-74fc-478d-b235-5dd9c460edc1" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise_Stratagem_17" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="50970d64-1b06-48af-b033-cc3832dbf80f" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(Devise17,100,1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdd7f1e44g1d32gb73dg2f9cg843360875c3b" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="46685878-5f93-472a-81fa-8747efa76143" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise_Stratagem_18" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="50970d64-1b06-48af-b033-cc3832dbf80f" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(Devise18,100,1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h1296e885gd4d9ga56bgba40g5ab874c084a3" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="261e0fe3-4e33-4d14-9b78-d1c785f36d2b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise_Stratagem_19" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="50970d64-1b06-48af-b033-cc3832dbf80f" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(Devise19,100,1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he8a32dd3g79d6g8e88g80eag7e42b7245212" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="54908e18-f8bb-480c-9d06-c06a0cdfc92b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Devise_Stratagem_20" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="50970d64-1b06-48af-b033-cc3832dbf80f" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(Devise20,100,1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf01deb95g52eeg29cbgf7f2gc07c1230a278" version="1" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>
