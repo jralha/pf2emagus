@@ -182,6 +182,7 @@ type "SpellData"
 data "SpellType" "Target"
 using "Target_Feint"
 data "Cooldown" "OncePerTurn"
+data "RequirementConditions" "HasStatus('ARCANE_CASCADE') and CanUseWeaponActions();"
 data "UseCosts" "ActionPoint:0"
 
 new entry "Target_SureStrike"

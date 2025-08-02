@@ -293,4 +293,18 @@
   <content contentuid="h5bed8a82g59e0ge983g3980gf4c9015a1d22" version="1">* Divine Weapon *</content>
   <content contentuid="h9a7572edg6015g5233gede8g3b80684f5b44" version="1">Frequency once per turn &lt;br&gt;Trigger You finish Casting a Spell using one of your divine spell slots on your turn &lt;br&gt;You siphon residual spell energy into a weapon you’re wielding. Until the end of your turn, the weapon deals an additional 1d4 force damage. &lt;br&gt; Requires Acolyte Initiate</content>
   <content contentuid="h3e7305e2g020fgbb68g125eg2d4c07a1ca6e" version="1">* Triple Shot *</content>
+  <content contentuid="h7ab1aaefg52deg690cg1744gc9f3aa48c9d2" version="1">Arcane Cascade</content>
+  <content contentuid="h830a2dc5gb725g2e7ag6b00gd5834fe8dae6" version="1">While you're in the stance, your melee Strikes deal 2 extra force damage.</content>
+  <content contentuid="h40b9f836g7825g0290gbe98g08471fb6d025" version="1">Arcane Cascade</content>
+  <content contentuid="hab124182gdc03g1efagf49dg5882095916a8" version="1">After you cast a spell or spellstrike, you may enter Arcane Cascade</content>
+  <content contentuid="h6687728ag11f1g76f2g3ec8g16490c0a9493" version="1">Arcane Cascade Available</content>
+  <content contentuid="hd0ff4a18g715bg4512g2d58g3896836ed10d" version="1">You can enter Arcane Cascade</content>
+  <content contentuid="h7b612f4eg2cb3gb94dg24c2g4f32c99e1635" version="1">Emergency Targe</content>
+  <content contentuid="hd4046876g5e0egd0abg31d0g55e9f4955a6c" version="1">Reaction &lt;br&gt; Trigger: An enemy hits you with a melee Strike or a melee spell attack roll, or you fail a save against an enemy's spell. &lt;br&gt; Requirements: You are wielding a shield or have the shield spell prepared. &lt;br&gt; You immediately Raise a Shield or cast shield. The circumstance bonus applies to your defenses when determining the outcome of the triggering attack or spell.</content>
+  <content contentuid="h7e59b069gdc72gf15fg2284g72701389c716" version="1">Arcane Cascade</content>
+  <content contentuid="h5e75b5e0gd446gc7f2g486egb71c1d32f8e9" version="1">After you cast a spell or spellstrike, you may enter Arcane Cascade</content>
+  <content contentuid="h6f770055g9a20g8fa0g9e32gef7492cfbc22" version="1">Emergency Targe</content>
+  <content contentuid="h9f7f8dbeg18c1g7840g26a4g01f136da9f40" version="1">React to a failed save to raise your targe.</content>
+  <content contentuid="h39f23c6bg6606gebb0gf612gd3ce60c450f2" version="1">Emergency Targe</content>
+  <content contentuid="h33e8243ag7ca0gae0eg6480g5efeb636b62b" version="1">React to a strike to raise your targe.</content>
 </contentList>

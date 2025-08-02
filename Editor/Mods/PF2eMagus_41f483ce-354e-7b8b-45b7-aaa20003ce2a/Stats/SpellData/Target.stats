@@ -202,6 +202,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="03ee71a3-27cf-42ff-933f-6941006daa76" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:0" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('ARCANE_CASCADE') and CanUseWeaponActions();" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

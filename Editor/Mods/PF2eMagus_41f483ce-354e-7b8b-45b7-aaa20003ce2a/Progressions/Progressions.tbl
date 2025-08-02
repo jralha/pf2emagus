@@ -10,7 +10,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="1" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
         <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="1369dbc6-5af6-4bf6-a96a-b4c82a326f75;c761a9eb-3d58-4838-aa9d-5e392e3337ae;5a6d5ff1-b705-47a7-9959-5814c2c228cd;02770420-1ace-4808-aa8f-97146fa5e9ad" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="PathfinderStatBoosts;WillExpert;FortitudeExpert;UnarmedABP;UnlockedSpellSlotLevel1;FeatPrerequisites;AnchorPosition;RechargeSpellstrike;SureStrike;SpellstrikeToggle" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="PathfinderStatBoosts;WillExpert;FortitudeExpert;UnarmedABP;UnlockedSpellSlotLevel1;FeatPrerequisites;AnchorPosition;RechargeSpellstrike;SureStrike;SpellstrikeToggle;UnlockCascade" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonus(Skill,Perception);ProficiencyBonus(Skill,Arcana);Proficiency(LightArmor);ProficiencyBonus(Skill,Perception);ProficiencyBonus(SavingThrow,Wisdom);ProficiencyBonus(SavingThrow,Dexterity);ProficiencyBonus(SavingThrow,Constitution);Proficiency(MediumArmor);Proficiency(Shields);Proficiency(SimpleWeapons);Proficiency(MartialWeapons);ActionResource(SpellSlot,1,1)" />
         <field name="Selectors" type="StringTableFieldDefinition" value="SelectSkills(9f3a9f8d-f645-40b5-b36f-fb079b7b805e,6);SelectSpells(3cae2e56-9871-4cef-bba6-96845ea765fa,5,0,,,,AlwaysPrepared);SelectSpells(11f331b0-e8b7-473b-9d1f-19e8e4178d7d,5,0);SelectAbilityBonus(b9149c8e-52c8-46e5-9cb6-fc39301c05fe,AbilityBonus,2,1);" />
       </fields>
