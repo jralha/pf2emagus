@@ -17,6 +17,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="2193ad26-57be-4cdd-8658-9b820adace04" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasSomaticComponent;IsSpell" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="DealDamage(((LevelMapValue(H2D4))+(LevelMapValue(H2P1))),Force,Magical);RemoveStatus(SELF,Spellstrike_Discharged);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

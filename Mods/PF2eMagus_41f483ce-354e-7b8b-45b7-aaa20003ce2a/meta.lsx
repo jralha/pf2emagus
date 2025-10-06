@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <save>
-    <version major="4" minor="8" revision="0" build="400"/>
+    <version major="4" minor="8" revision="0" build="500"/>
     <region id="Config">
         <node id="root">
             <children>
@@ -73,7 +73,7 @@
                         </node>
                         <node id="ModuleShortDesc">
                             <attribute id="Folder" type="LSString" value="Gustav"/>
-                            <attribute id="MD5" type="LSString" value="f6bd696354f8441f0d0e6fdb52105f73"/>
+                            <attribute id="MD5" type="LSString" value="066354a64ec5ea5ee70b475f14b510ea"/>
                             <attribute id="Name" type="LSString" value="Gustav"/>
                             <attribute id="PublishHandle" type="uint64" value="0"/>
                             <attribute id="UUID" type="guid" value="991c9c7a-fb80-40cb-8f0d-b92d4e80e9b1"/>
@@ -81,7 +81,7 @@
                         </node>
                         <node id="ModuleShortDesc">
                             <attribute id="Folder" type="LSString" value="GustavDev"/>
-                            <attribute id="MD5" type="LSString" value="2101ea256b9db7a2f89f2b16067fff07"/>
+                            <attribute id="MD5" type="LSString" value="e60af947c16ab73cc7a0aab9eaa4fe1a"/>
                             <attribute id="Name" type="LSString" value="GustavDev"/>
                             <attribute id="PublishHandle" type="uint64" value="0"/>
                             <attribute id="UUID" type="guid" value="28ac9ce2-2aba-8cda-b3b5-6e922f71b6b8"/>
@@ -89,7 +89,7 @@
                         </node>
                         <node id="ModuleShortDesc">
                             <attribute id="Folder" type="LSString" value="GustavX"/>
-                            <attribute id="MD5" type="LSString" value="7bda6398eec6be9d83fdc1e9d7f49ca1"/>
+                            <attribute id="MD5" type="LSString" value="ef3fcba3f3684b3088ad1f9874d4957c"/>
                             <attribute id="Name" type="LSString" value="GustavX"/>
                             <attribute id="PublishHandle" type="uint64" value="0"/>
                             <attribute id="UUID" type="guid" value="cb555efe-2d9e-131f-8195-a89329d218ea"/>
@@ -97,11 +97,11 @@
                         </node>
                         <node id="ModuleShortDesc">
                             <attribute id="Folder" type="LSString" value="Pathfinder2ndEdition_dda83752-5c01-30f9-6a09-824c7e182090"/>
-                            <attribute id="MD5" type="LSString" value="89a23bac784525108eb863b40567a8bd"/>
+                            <attribute id="MD5" type="LSString" value="d69814eba80014858ab28c4a28809b6e"/>
                             <attribute id="Name" type="LSString" value="Pathfinder 2nd Edition"/>
                             <attribute id="PublishHandle" type="uint64" value="4330140"/>
                             <attribute id="UUID" type="guid" value="dda83752-5c01-30f9-6a09-824c7e182090"/>
-                            <attribute id="Version64" type="int64" value="36591753414836226"/>
+                            <attribute id="Version64" type="int64" value="36873221949095936"/>
                         </node>
                     </children>
                 </node>
@@ -109,10 +109,10 @@
                     <attribute id="Author" type="LSString" value="Ralha"/>
                     <attribute id="CharacterCreationLevelName" type="FixedString" value=""/>
                     <attribute id="Description" type="LSString" value="Adds the Magus class to the PF2e mod"/>
-                    <attribute id="FileSize" type="uint64" value="1595945"/>
+                    <attribute id="FileSize" type="uint64" value="1598065"/>
                     <attribute id="Folder" type="LSString" value="PF2eMagus_41f483ce-354e-7b8b-45b7-aaa20003ce2a"/>
                     <attribute id="LobbyLevelName" type="FixedString" value=""/>
-                    <attribute id="MD5" type="LSString" value="c2af94c3491ab96670d6e554e7b30b86"/>
+                    <attribute id="MD5" type="LSString" value="222a9e5c8b7dcfd7d0fdec15a4d32f59"/>
                     <attribute id="MenuLevelName" type="FixedString" value=""/>
                     <attribute id="Name" type="LSString" value="PF2eMagus"/>
                     <attribute id="NumPlayers" type="uint8" value="4"/>
@@ -120,7 +120,7 @@
                     <attribute id="PublishHandle" type="uint64" value="5091691"/>
                     <attribute id="StartupLevelName" type="FixedString" value=""/>
                     <attribute id="UUID" type="FixedString" value="41f483ce-354e-7b8b-45b7-aaa20003ce2a"/>
-                    <attribute id="Version64" type="int64" value="36028797018964003"/>
+                    <attribute id="Version64" type="int64" value="36028797018964007"/>
                     <children>
                         <node id="PublishVersion">
                             <attribute id="Version64" type="int64" value="144255927718543409"/>
